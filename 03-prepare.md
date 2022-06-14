@@ -1,19 +1,21 @@
 ---
-title: "Using Markdown"
+title: "Preparing an SD Card"
 teaching: 10
 exercises: 2
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using Markdown and `{sandpaper}`?
+- How would you prepare an SD card?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with The Carpentries Workbench
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- know how to download and install the Raspberry Pi imager
+- know how to download and install the Raspberry Pi image
+- know how to write the Raspberry Pi image to the SD Card
+- know how to connect to the Raspberry Pi Access Point
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
