@@ -12,7 +12,9 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- TODO
+- Select an appropriate Raspberry Pi
+- Select an appropriate SD card
+- Understand alternative hardwares
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
