@@ -14,7 +14,7 @@ exercises: 0
 
 - Select an appropriate Raspberry Pi
 - Select an appropriate SD card
-- Understand alternative hardwares
+- Understand alternative hardware
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
