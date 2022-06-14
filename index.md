@@ -2,8 +2,4 @@
 site: sandpaper::sandpaper_site
 ---
 
-This is a new lesson built with [The Carpentries Workbench][workbench]. 
-
-
-[workbench]: https://carpentries.github.io/sandpaper-docs
-
+This lesson is for instructors who would like to use the CarpentriesOffline infrastructure to deliver Carpentries workshops withou any Internet access.
