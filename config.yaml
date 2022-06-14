@@ -13,7 +13,7 @@ carpentry: incubator
 title: CarpentriesOffline Instructor Onboarding
 
 # Date the lesson was created (this is empty by default)
-created: ~
+created: 2022-06-14
 
 # Comma-separated list of keywords for the lesson
 keywords: software, data, lesson, The Carpentries
@@ -26,14 +26,13 @@ life_cycle: pre-alpha
 license: CC-BY 4.0
 
 # Link to the source repository for this lesson
-source: https://github.com/carpentries/workbench-template-md
+source: https://github.com/carpentriesoffline/CarpentriesOffline_Instructor_Onboarding
 
 # Default branch of your lesson
 branch: main
 
 # Who to contact if there are any issues
-contact: team@carpentries.org
-
+contact: jannetta.steyn@newcastle.ac.uk
 # Navigation ------------------------------------------------
 # 
 # Use the following menu items to specify the order of
