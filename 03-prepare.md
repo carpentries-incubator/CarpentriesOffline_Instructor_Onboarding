@@ -12,10 +12,10 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- know how to download and install the Raspberry Pi imager
-- know how to download and install the CarpentriesOffline image
-- know how to write the CarpentriesOffline image to the SD Card
-- know how to connect to the Raspberry Pi Access Point
+- how to download and install the Raspberry Pi imager
+- how to download and install the CarpentriesOffline image
+- how to write the CarpentriesOffline image to the SD Card
+- how to connect to the Raspberry Pi Access Point
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
