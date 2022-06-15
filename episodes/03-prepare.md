@@ -21,76 +21,41 @@ exercises: 2
 
 ## Introduction
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.txt) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+::: challenge 
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+## Challenge 1: What software do you need to prepare an SD card?
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+1. Word
+2. Excel
+3. Raspberry Pi Imager
+4. Ubuntu
+5. Raspbian
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+:::::: solution
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+1. Word cannot be used to prepare an SD card, it is a word processor.
+2. Excel cannot be used to prepare an SD card, it is a spreadsheet.
+3. The correct answer is *3*
 
-::::::::::::::::::::::::::::::::::::: challenge 
+::::::
 
-## Challenge 1: Can you do it?
+:::
 
-What is the output of this command?
+::: challenge
 
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+## Challenge 2: Where would you find the CarpentriesOffline image?
 
-:::::::::::::::::::::::: solution 
+1. On the Raspberry Pi website
+2. On The Carpentries website
+3. On the CarpentriesOffline website
+4. On the Microsoft website?
 
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
+:::::: solution
 
-:::::::::::::::::::::::::::::::::
+::::::
 
-
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can use standard markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
+:::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
