@@ -45,31 +45,89 @@ associated with the lessons. They appear in the "Instructor View"
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 1: Can you do it?
-
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+## Challenge 1: What are the different Raspberry Pis that are available?
 
 :::::::::::::::::::::::: solution 
 
-## Output
-
-```output
-[1] "This new lesson looks good"
-```
+- Raspberry Pi zero
+- Raspberry Pi zero W
+- Raspberry Pi 1 model A+
+- Raspberry Pi 1 model B+
+- Raspberry Pi 3 model B
+- Raspberry Pi 3 model B+
+- Raspberry Pi 3 model A+
+- Raspberry Pi 4 model B
+- Raspberry Pi 400
+- Raspberry Pi zero 2W
+- Raspberry Pi pico
 
 :::::::::::::::::::::::::::::::::
 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+## Challenge 2: Which of the listed Raspberry Pis would be appropriate for this workshop?
+
+- Raspberry Pi zero
+- Raspberry Pi zero W
+- Raspberry Pi 1 model A+
+- Raspberry Pi 1 model B+
+- Raspberry Pi 3 model B
+- Raspberry Pi 3 model B+
+- Raspberry Pi 3 model A+
+- Raspberry Pi 4 model B
+- Raspberry Pi 400
+- Raspberry Pi zero 2W
+- Raspberry Pi pico
 
 :::::::::::::::::::::::: solution 
 
-You can add a line with at least three colons and a `solution` tag.
+- Raspberry Pi 400
+- Raspberry Pi 4 (all)
+- Raspberry Pi 3 (all)
+- Raspberry Pi zero (to be tested)
 
+:::::::::::::::::::::::::::::::::
+
+
+## Challenge 3: What is a Raspberry Pi? (MCQ, or text area)
+
+1. A credit card sized computer
+2. A delicious confectionary good
+3. Computer only used for educational purposes
+4. I don't know
+
+:::::::::::::::::::::::: solution 
+
+Correct Answer:
+```
+1. A credit card sized computer
+```
+Incorrect Answers:
+```
+2. A delicious confectionary good (This would be a raspberry pie)
+3. Computer only used for educational purposes (Raspberry Pis can be used for many things aside from just education)
+```
+:::::::::::::::::::::::::::::::::
+
+
+## Challenge 4: What is required to boot up a Raspberry Pi? (MCQ)
+
+1. A micro SD card
+2. A mini SD card
+3. A monitor and keyboard/mouse
+4. USB stick/flash-drive
+
+:::::::::::::::::::::::: solution 
+
+Correct Answer:
+```
+1. A micro SD card
+```
+Incorrect Answers:
+```
+2. A mini SD card (these are the wrong format, they won't fit in a Raspberry Pi)
+3. A monitor and keyboard/mouse (a computer does not necessarily need any input devices to function)
+4. USB stick/flash-drive (by default the Raspberry Pi will boot from the micro SD card, not the USB)
+```
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
