@@ -33,11 +33,11 @@ exercises: 2
 5. Raspbian
 
 :::::: solution
-```
+
 1. Word cannot be used to prepare an SD card, it is a word processor.
-2. Excel cannot be used to prepare an SD card, it is a spreadsheet.
-3. The correct answer is *3*
-```
+3. Excel cannot be used to prepare an SD card, it is a spreadsheet.
+4. The correct answer is *3*
+
 ::::::
 
 :::
