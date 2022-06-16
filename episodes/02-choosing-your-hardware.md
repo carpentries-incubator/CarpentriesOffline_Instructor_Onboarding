@@ -6,7 +6,8 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- TODO
+- What hardware do I need to set up CarpentriesOffline?
+- What specifications should the hardware meet?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -151,10 +152,9 @@ Cool, right?
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- You need a suitable model of Raspberry Pi, or other computer capable of acting as a server
+- You need a micro SD card (not to be confused with mini SD cards)
+- Keyboards and monitors are not required for the Pi (can be run headless)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
