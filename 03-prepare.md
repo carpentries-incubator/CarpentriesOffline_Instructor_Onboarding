@@ -6,7 +6,9 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How would you prepare an SD card?
+- Where do you download the Raspberry Pi imager from?
+- How do you install the Raspberry Pi imager on your computer?
+- 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -59,10 +61,11 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- Know where to download the Raspberry Pi Imager from
+- Know how to install the Raspberry Pi Imager
+- Know where to download the CarpentriesOffline RPi image
+- Know how to write the CarpentriesOffline image to an SD card
+- Know how to start up the RPi as an Access Point and Server for learners to connect to.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
