@@ -31,28 +31,6 @@ Usually when you buy a RPi you can also buy an SD card with the operating system
 
 The CarpentriesOffline team is building an **image** that can be written to the SD card that contains the operating system and all the required files. This image is about 5GB at the moment. So you will need an SD card that can hold at least that. The image is hosted on the CarpentriesOffline website and will be called CarpentriesOffline_vX.XX.img where X.XX is the version of the image. It might take a while to download this image so your instructor might choose to make the image available locally for this lesson, eg. on a USB memory stick. However, if you are going to download it, using your browser, make your way to [https://github.com/carpentriesoffline/CarpentriesOffline.github.io](https://github.com/carpentriesoffline/CarpentriesOffline.github.io). On the right hand side of the page, there should be a section with the heading **Releases**. Click on the release you wish to download and save the file to your computer.
 
-If you have not already done so you have to download and install the Raspberry Pi Imager. Using your browser, navigate to the Raspberry Pi [download page](https://www.raspberrypi.com/software/). You should now be able to select the download for your operating system. Click on the approprate link and save the installation file to your computer. The web page will provide further information for installing the software on your computer.
-
-Once the installation is complete you should be able to run the imager which will open with the following screen:
-
-![The Raspberry Pi Imager](RaspberryPiImager.png){alt='An image of the Raspberry Pi Imager software intro screen'}
-
-You can now click on the **Choose OS** button which will open a window for selecting the image you want to write to the SD card. Scroll down to the bottom where you should find an option **Use custom**. Click on that option:
-
-![Selecting an image to write to the SD card](ChooseImage.png){alt='An image of the RPi Imager software screen for selecting an image to be written to the SD card'}
-
-Navigate to where you saved the CarpentriesOffline image and select it. Now click on the **Choose Storage** button and select the device you want to write the image to:
-
-![Select a device to write the image to](SelectDevice.phg){alt='An image of the RPi Imager software screen for selecting the device to be written to'}
-
-Once you have selected the Storage device, click the **WRITE** button. You will be prompted to overwrite the information on the SD card, click on **YES** to accept.
-
-![Prompt to overwrite the SD card](PromptToOverwrite.png){alt='An image of the RPi Imager software screen for confirming to overwrite the SD card'}
-
-The image will now be written to the SD card.
-
-![Overwriting the SD card](Writing.png){alt='An image of the RPi Imager software screen while writing the image to the SD card'}
-
 
 ::: challenge 
 
@@ -90,6 +68,37 @@ The image will now be written to the SD card.
 ::::::
 
 :::
+
+
+If you have not already done so you have to download and install the Raspberry Pi Imager. Using your browser, navigate to the Raspberry Pi [download page](https://www.raspberrypi.com/software/). You should now be able to select the download for your operating system. Click on the approprate link and save the installation file to your computer. The web page will provide further information for installing the software on your computer.
+
+Once the installation is complete you should be able to run the imager which will open with the following screen:
+
+![The Raspberry Pi Imager](RaspberryPiImager.png){alt='An image of the Raspberry Pi Imager software intro screen'}
+
+You can now click on the **Choose OS** button which will open a window for selecting the image you want to write to the SD card. Scroll down to the bottom where you should find an option **Use custom**. Click on that option:
+
+![Selecting an image to write to the SD card](ChooseImage.png){alt='An image of the RPi Imager software screen for selecting an image to be written to the SD card'}
+
+Navigate to where you saved the CarpentriesOffline image and select it. Make sure you have inserted the SD card into your computer. Now click on the **Choose Storage** button and select the device you want to write the image to:
+
+![Select a device to write the image to](SelectDevice.phg){alt='An image of the RPi Imager software screen for selecting the device to be written to'}
+
+Once you have selected the Storage device, click the **WRITE** button. You will be prompted to overwrite the information on the SD card, click on **YES** to accept.
+
+![Prompt to overwrite the SD card](PromptToOverwrite.png){alt='An image of the RPi Imager software screen for confirming to overwrite the SD card'}
+
+The image will now be written to the SD card.
+
+![Overwriting the SD card](Writing.png){alt='An image of the RPi Imager software screen while writing the image to the SD card'}
+
+Once the image has been written to the SD card a **Write Successful** message will be displayed.
+
+![Write Successful](ImageWritten.png){alt='An image of the RPi Imager software screen after the image has been written succesfully.'}
+
+You can now remove the SD card from your computer and insert it into the Raspberry Pi.
+
+
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
