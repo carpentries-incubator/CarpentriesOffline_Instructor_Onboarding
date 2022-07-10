@@ -328,7 +328,7 @@
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Inline instructor notes can help inform instructors of timing challenges associated with the lessons. They appear in the “Instructor View”</p>
 </div>
@@ -359,7 +359,7 @@
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -388,7 +388,7 @@
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a <code>solution</code> tag.</p>
 </div>
@@ -479,7 +479,7 @@ any links that you are not going to use.
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Inline instructor notes can help inform instructors of timing challenges associated with the lessons. They appear in the “Instructor View”</p>
 </div>
@@ -504,7 +504,7 @@ any links that you are not going to use.
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>Raspberry Pi zero</li>
@@ -553,7 +553,7 @@ any links that you are not going to use.
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li>Raspberry Pi 400</li>
@@ -588,7 +588,7 @@ any links that you are not going to use.
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Correct Answer:</p>
 <pre><code>1. A credit card sized computer</code></pre>
@@ -622,7 +622,7 @@ any links that you are not going to use.
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Correct Answer:</p>
 <pre><code>1. A micro SD card</code></pre>
@@ -708,7 +708,8 @@ any links that you are not going to use.
 <p>The CarpentriesOffline team is building an <strong>image</strong> that can be written to the SD card that contains the operating system and all the required files. This image is about 5GB at the moment. So you will need an SD card that can hold at least that. The image is hosted on the CarpentriesOffline website and will be called CarpentriesOffline_vX.XX.img where X.XX is the version of the image. It might take a while to download this image so your instructor might choose to make the image available locally for this lesson, eg. on a USB memory stick. However, if you are going to download it, using your browser, make your way to <a href="https://github.com/carpentriesoffline/CarpentriesOffline.github.io" class="external-link">https://github.com/carpentriesoffline/CarpentriesOffline.github.io</a>. On the right hand side of the page, there should be a section with the heading <strong>Releases</strong>. Click on the release you wish to download and save the file to your computer.</p>
 <p>If you have not already done so you have to download and install the Raspberry Pi Imager. Using your browser, navigate to the Raspberry Pi <a href="https://www.raspberrypi.com/software/" class="external-link">download page</a>. You should now be able to select the download for your operating system. Click on the approprate link and save the installation file to your computer. The web page will provide further information for installing the software on your computer.</p>
 <p>Once the installation is complete you should be able to run the imager which will open with the following screen:</p>
-<figure><img src="../RaspberryPiImager.png" alt="An image of the Raspberry Pi Imager software intro screen" class="figure mx-auto d-block"><figcaption>The Raspberry Pi Imager</figcaption></figure><div id="challenge1" class="callout challenge">
+<figure><img src="../RaspberryPiImager.png" alt="An image of the Raspberry Pi Imager software intro screen" class="figure mx-auto d-block"><figcaption>The Raspberry Pi Imager</figcaption></figure><p>You can now click on the <strong>Choose OS</strong> button which will open a window for selecting the image you want to write to the SD card. Scroll down to the bottom where you should find an option <strong>Use custom</strong>. Click on that option:</p>
+<figure><img src="../ChooseImage.png" alt="An image of the RPi Imager software screen for selecting an image to be written to the SD card" class="figure mx-auto d-block"><figcaption>Selecting an Image to write to the SD card</figcaption></figure><div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
