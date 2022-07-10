@@ -17,7 +17,6 @@ exercises: 2
 - download and install the Raspberry Pi imager
 - download and install the CarpentriesOffline image
 - write the CarpentriesOffline image to the SD Card
-- connect to the Raspberry Pi Access Point
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -106,7 +105,6 @@ You can now remove the SD card from your computer and insert it into the Raspber
 - Know how to install the Raspberry Pi Imager
 - Know where to download the CarpentriesOffline RPi image
 - Know how to write the CarpentriesOffline image to an SD card
-- Know how to start up the RPi as an Access Point and Server for learners to connect to.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
