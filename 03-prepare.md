@@ -35,7 +35,7 @@ If you have not already done so you have to download and install the Raspberry P
 
 Once the installation is complete you should be able to run the imager which will open with the following screen:
 
-
+![RaspberryPiImager.png](RaspberryPiImager.png)
 
 
 
