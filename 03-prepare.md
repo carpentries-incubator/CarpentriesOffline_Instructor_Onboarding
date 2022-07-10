@@ -39,8 +39,19 @@ Once the installation is complete you should be able to run the imager which wil
 
 You can now click on the **Choose OS** button which will open a window for selecting the image you want to write to the SD card. Scroll down to the bottom where you should find an option **Use custom**. Click on that option:
 
-![Selecting an Image to write to the SD card](ChooseImage.png){alt='An image of the RPi Imager software screen for selecting an image to be written to the SD card'}
+![Selecting an image to write to the SD card](ChooseImage.png){alt='An image of the RPi Imager software screen for selecting an image to be written to the SD card'}
 
+Navigate to where you saved the CarpentriesOffline image and select it. Now click on the **Choose Storage** button and select the device you want to write the image to:
+
+![Select a device to write the image to](SelectDevice.phg){alt='An image of the RPi Imager software screen for selecting the device to be written to'}
+
+Once you have selected the Storage device, click the **WRITE** button. You will be prompted to overwrite the information on the SD card, click on **YES** to accept.
+
+![Prompt to overwrite the SD card](PromptToOverwrite.png){alt='An image of the RPi Imager software screen for confirming to overwrite the SD card'}
+
+The image will now be written to the SD card.
+
+![Overwriting the SD card](Writing.png){alt='An image of the RPi Imager software screen while writing the image to the SD card'}
 
 
 ::: challenge 
