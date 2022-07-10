@@ -37,7 +37,9 @@ Once the installation is complete you should be able to run the imager which wil
 
 ![The Raspberry Pi Imager](RaspberryPiImager.png){alt='An image of the Raspberry Pi Imager software intro screen'}
 
+You can now click on the **Choose OS** button which will open a window for selecting the image you want to write to the SD card. Scroll down to the bottom where you should find an option **Use custom**. Click on that option:
 
+![Selecting an Image to write to the SD card](ChooseImage.png){alt='An image of the RPi Imager software screen for selecting an image to be written to the SD card'}
 
 
 
