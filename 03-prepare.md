@@ -6,9 +6,11 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- Where do you download the Raspberry Pi imager from?
+- Where do you download the Raspberry Pi Imager from?
+- Where do you download the CarpentriesOffline image from?
 - How do you install the Raspberry Pi imager on your computer?
-- 
+- What is the CarpentriesOffline image?
+- What is the Raspberry Pi Imager used for?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
