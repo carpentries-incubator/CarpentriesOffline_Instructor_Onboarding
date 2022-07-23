@@ -44,6 +44,7 @@ associated with the lessons. They appear in the "Instructor View"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
 <table>
  <tr>
   <td style="width: 50px"><img src='RaspberryPiZero.png' alt='An image of the Raspberry Pi Zero'>Raspberry Pi Zero</td>
