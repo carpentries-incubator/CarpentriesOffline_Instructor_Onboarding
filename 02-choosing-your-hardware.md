@@ -44,6 +44,10 @@ associated with the lessons. They appear in the "Instructor View"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+||||
+|---|---|---|
+|a|b|c|d
+
 
 <table>
  <tr>
