@@ -44,11 +44,28 @@ associated with the lessons. They appear in the "Instructor View"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-| ![Raspberry Pi Zero](RaspberryPiZero.png){alt='An image of the Raspberry Pi Zero'} | ![Raspberry Pi Zero W](RaspberryPiZeroW.png){alt='An image of the Raspberry Pi Zero W'} | ![Raspberry Pi Zero 2W](RaspberryPiZero2W.png){alt='An image of the Raspberry Pi Zero 2W'} |
-| :-: | :-: | :-: |
-| ![Raspberry Pi 3 model A+](RaspberryPi3ModelAp.png){alt='An image of the Raspberry Pi 3 model A+'} | ![Raspberry Pi 3 model B](RaspberryPi3ModelB.png){alt='An image of the Raspberry Pi 3 model B'} | ![Raspberry Pi 3 model B+](RaspberryPi3ModelBp.png){alt='An image of the Raspberry Pi 3 model B+'} |
-| ![Raspberry Pi 4 model B](RaspberryPi4ModelB.png){alt='An image of the Raspberry Pi 4 model B'} | ![Raspberry Pi 400](RaspberryPi400.png){alt='An image of the Raspberry Pi 400'} | ![Raspberry Pi pico](RaspberryPiPico.png){alt='An image of the Raspberry Pi pico'} |
-| ![Raspberry Pi 1 model A+](RaspberryPi1ModelAp.png){alt='An image of the Raspberry Pi 1 model A+'} | ![Raspberry Pi 1 model B+](RaspberryPi1ModelBp.png){alt='An image of the Raspberry Pi 1 model B+'} |  |
+<table>
+ <tr>
+  <td style="width: 50px"><img src='RaspberryPiZero.png' alt='An image of the Raspberry Pi Zero'>Raspberry Pi Zero</td>
+  <td style="width: 50px"><img src='RaspberryPiZeroW.png' alt='An image of the Raspberry Pi Zero W'>Raspberry Pi Zero W</td>
+  <td style="width: 50px"><img src='RaspberryPiZero2W.png' alt='An image of the Raspberry Pi Zero 2W'>Raspberry Pi Zero 2W</td>
+ </tr>
+ <tr>
+  <td><img src='RaspberryPi3ModelAp.png' alt='An image of the Raspberry Pi 3 model A+'>Raspberry Pi 3 model A+</td>
+  <td><img src='RaspberryPi3ModelB.png' alt='An image of the Raspberry Pi 3 model B'>Raspberry Pi 3 model B</td>
+  <td><img src='RaspberryPi3ModelBp.png' alt='An image of the Raspberry Pi 3 model B+'>Raspberry Pi 3 model B+</td>
+ </tr>
+ <tr>
+  <td><img src='RaspberryPi4ModelB.png' alt='An image of the Raspberry Pi 4 model B'>Raspberry Pi 4 model B</td>
+  <td><img src='RaspberryPi400.png' alt='An image of the Raspberry Pi 400'>Raspberry Pi 400</td>
+  <td><img src='RaspberryPiPico.png' alt='An image of the Raspberry Pi pico'>Raspberry Pi pico</td>
+ </tr>
+ <tr>
+  <td><img src='RaspberryPi1ModelAp.png' alt='An image of the Raspberry Pi 1 model A+'>Raspberry Pi 1 model A+</td>
+  <td><img src='RaspberryPi1ModelBp.png' alt='An image of the Raspberry Pi 1 model B+'>Raspberry Pi 1 model B+</td>
+  <td></td>
+ </tr>
+</table>
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
