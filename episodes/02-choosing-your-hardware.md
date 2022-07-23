@@ -51,19 +51,19 @@ associated with the lessons. They appear in the "Instructor View"
   <td style="width: 50px"><img src='RaspberryPiZero2W.png' alt='An image of the Raspberry Pi Zero 2W'>Raspberry Pi Zero 2W</td>
  </tr>
  <tr>
-  <td><img src='RaspberryPi3ModelAp.png' alt='An image of the Raspberry Pi 3 model A+'>Raspberry Pi 3 model A+</td>
-  <td><img src='RaspberryPi3ModelB.png' alt='An image of the Raspberry Pi 3 model B'>Raspberry Pi 3 model B</td>
-  <td><img src='RaspberryPi3ModelBp.png' alt='An image of the Raspberry Pi 3 model B+'>Raspberry Pi 3 model B+</td>
+  <td style="width: 50px"><img src='RaspberryPi3ModelAp.png' alt='An image of the Raspberry Pi 3 model A+'>Raspberry Pi 3 model A+</td>
+  <td style="width: 50px"><img src='RaspberryPi3ModelB.png' alt='An image of the Raspberry Pi 3 model B'>Raspberry Pi 3 model B</td>
+  <td style="width: 50px"><img src='RaspberryPi3ModelBp.png' alt='An image of the Raspberry Pi 3 model B+'>Raspberry Pi 3 model B+</td>
  </tr>
  <tr>
-  <td><img src='RaspberryPi4ModelB.png' alt='An image of the Raspberry Pi 4 model B'>Raspberry Pi 4 model B</td>
-  <td><img src='RaspberryPi400.png' alt='An image of the Raspberry Pi 400'>Raspberry Pi 400</td>
-  <td><img src='RaspberryPiPico.png' alt='An image of the Raspberry Pi pico'>Raspberry Pi pico</td>
+  <td style="width: 50px"><img src='RaspberryPi4ModelB.png' alt='An image of the Raspberry Pi 4 model B'>Raspberry Pi 4 model B</td>
+  <td style="width: 50px"><img src='RaspberryPi400.png' alt='An image of the Raspberry Pi 400'>Raspberry Pi 400</td>
+  <td style="width: 50px"><img src='RaspberryPiPico.png' alt='An image of the Raspberry Pi pico'>Raspberry Pi pico</td>
  </tr>
  <tr>
-  <td><img src='RaspberryPi1ModelAp.png' alt='An image of the Raspberry Pi 1 model A+'>Raspberry Pi 1 model A+</td>
-  <td><img src='RaspberryPi1ModelBp.png' alt='An image of the Raspberry Pi 1 model B+'>Raspberry Pi 1 model B+</td>
-  <td></td>
+  <td style="width: 50px"><img src='RaspberryPi1ModelAp.png' alt='An image of the Raspberry Pi 1 model A+'>Raspberry Pi 1 model A+</td>
+  <td style="width: 50px"><img src='RaspberryPi1ModelBp.png' alt='An image of the Raspberry Pi 1 model B+'>Raspberry Pi 1 model B+</td>
+  <td style="width: 50px"></td>
  </tr>
 </table>
 
