@@ -46,7 +46,7 @@ associated with the lessons. They appear in the "Instructor View"
 
 ||||
 |---|---|---|
-|a|b|c|d
+|![](RaspberryPiZero.png)|![](RaspberryPiZero.png)|![](RaspberryPiZero.png)|![](RaspberryPiZero.png)|
 
 
 <table class="table">
