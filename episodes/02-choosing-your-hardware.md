@@ -96,11 +96,16 @@ Raspberry Pis below version 3 are simply too low spec to run the required softwa
  </tbody>
 </table>
 
+<p align="center">Images sourced from: [https://www.raspberrypi.com/products/](https://www.raspberrypi.com/products/)</p>
+
 ## Choosing an SD card
 
 Just like any other computer, Raspberry Pis require a place to store data. Most Pis work with SD cards, of which there are multiple types. The specific type of SD card needed depends on which specific Raspberry Pi model you use (on the website you can see this for each model in the Specification section near the bottom of the page). The afformentioned Pis will use either a standard SD card, or a microSD card.
 
-![An image showcasing three types of SD card (standard, mini, and micro)](SDCards.png)
+<p align="center">
+ <img src="SDCards.png" alt="An image showcasing three types of SD card (standard, mini, and micro)"><br>
+ <a href="https://commons.wikimedia.org/wiki/File:Sdcard.svg">毛抜き</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
+</p>
 
 For CarpentriesOffline we need a minimum space of 5GB to store all of our software and data. Since SD cards come in sizes of incremental powers of two (2, 4, 8, 16, 32, etc.) we will need at minimum an 8GB SD card.
 
