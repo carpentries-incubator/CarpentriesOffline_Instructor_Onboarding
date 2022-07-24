@@ -164,6 +164,8 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#introduction">Introduction</a></li>
+<li><a href="#choosing-a-raspberry-pi">Choosing a Raspberry Pi</a></li>
+<li><a href="#choosing-an-sd-card">Choosing an SD card</a></li>
 <li><a href="#figures">Figures</a></li>
 <li><a href="#math">Math</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -241,7 +243,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Choosing your Hardware</h1>
-        <p> Last updated on 2022-07-23 | <a href="https://github.com/carpentriesoffline/CarpentriesOffline_Instructor_Onboarding/edit/main/episodes/02-choosing-your-hardware.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <p> Last updated on 2022-07-24 | <a href="https://github.com/carpentriesoffline/CarpentriesOffline_Instructor_Onboarding/edit/main/episodes/02-choosing-your-hardware.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -255,7 +257,8 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>What hardware do I need to set up CarpentriesOffline?</li>
+<ul><li>What is a raspberry Pi</li>
+<li>What hardware do I need to set up CarpentriesOffline?</li>
 <li>What specifications should the hardware meet?</li>
 </ul></div>
 </div>
@@ -273,35 +276,39 @@
 </div>
 </div>
 <section id="introduction"><h2 class="section-heading">Introduction</h2>
-<hr class="half-width"><p>This is a lesson created via The Carpentries Workbench. It is written in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a> for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R Markdown</a> for dynamic files that can render code into output. Please refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a valid Carpentries lesson:</p>
-<ol style="list-style-type: decimal"><li>
-<code>questions</code> are displayed at the beginning of the episode to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to reinforce the objectives.</li>
-</ol><table class="table"><tbody><tr class="odd"><figure><img src="RaspberryPiZero.png" class="figure mx-auto d-block"></figure><figure><img src="RaspberryPiZero.png" class="figure mx-auto d-block"></figure><figure><img src="RaspberryPiZero.png" class="figure mx-auto d-block"></figure></tr></tbody></table><table class="table table"><tbody><tr><figure style="width: 50px"><img src="RaspberryPiZero.png" alt="An image of the Raspberry Pi Zero" class="figure mx-auto d-block">Raspberry Pi Zero
-</figure><figure style="width: 50px"><img src="RaspberryPiZeroW.png" alt="An image of the Raspberry Pi Zero W" class="figure mx-auto d-block">Raspberry Pi Zero W
-</figure><figure style="width: 50px"><img src="RaspberryPiZero2W.png" alt="An image of the Raspberry Pi Zero 2W" class="figure mx-auto d-block">Raspberry Pi Zero 2W
-</figure></tr><tr><figure style="width: 50px"><img src="RaspberryPi3ModelAp.png" alt="An image of the Raspberry Pi 3 model A+" class="figure mx-auto d-block">Raspberry Pi 3 model A+
-</figure><figure style="width: 50px"><img src="RaspberryPi3ModelB.png" alt="An image of the Raspberry Pi 3 model B" class="figure mx-auto d-block">Raspberry Pi 3 model B
-</figure><figure style="width: 50px"><img src="RaspberryPi3ModelBp.png" alt="An image of the Raspberry Pi 3 model B+" class="figure mx-auto d-block">Raspberry Pi 3 model B+
-</figure></tr><tr><figure style="width: 50px"><img src="RaspberryPi4ModelB.png" alt="An image of the Raspberry Pi 4 model B" class="figure mx-auto d-block">Raspberry Pi 4 model B
-</figure><figure style="width: 50px"><img src="RaspberryPi400.png" alt="An image of the Raspberry Pi 400" class="figure mx-auto d-block">Raspberry Pi 400
-</figure><figure style="width: 50px"><img src="RaspberryPiPico.png" alt="An image of the Raspberry Pi pico" class="figure mx-auto d-block">Raspberry Pi pico
-</figure></tr><tr><figure style="width: 50px"><img src="RaspberryPi1ModelAp.png" alt="An image of the Raspberry Pi 1 model A+" class="figure mx-auto d-block">Raspberry Pi 1 model A+
-</figure><figure style="width: 50px"><img src="RaspberryPi1ModelBp.png" alt="An image of the Raspberry Pi 1 model B+" class="figure mx-auto d-block">Raspberry Pi 1 model B+
-</figure><td style="width: 50px">
+<hr class="half-width"><p>In order to hold an offline workshop we need some way of allowing the learners to download lesson material, data, and relevant software. To do this we need a computer with this data to act as an access point. Any computer which can run Linux with a web server will do, but for CarpentriesOffline we will be using the Raspberry Pi, due to its portability. Also, by sticking to only using Raspberry Pis we can ensure the software we use can be pre-packaged and will work without having to worry about getting the correct versions to work on differing hardware.</p>
+<p>Raspberry Pis (not to be confused with Raspberry Pies) are low cost credit card sized computers often used in education. Their small size makes them very portable, allowing them to be set up and used anywhere with a power socket with minimal effort.</p>
+</section><section id="choosing-a-raspberry-pi"><h2 class="section-heading">Choosing a Raspberry Pi</h2>
+<hr class="half-width"><p>A list of all the available Raspberry Pi devices can be found on the main Raspberry Pi website here: <a href="https://www.raspberrypi.com/products/" class="external-link">https://www.raspberrypi.com/products/</a>. Not all of these devices will work however, since some lack the minimum hardware requirements to run our software. The devices which will work are as follows:</p>
+<ul><li>Raspberry Pi 400</li>
+<li>Raspberry Pi 4 (all)</li>
+<li>Raspberry Pi 3 (all)</li>
+<li>Raspberry Pi zero (to be tested)</li>
+</ul><p>Raspberry Pis below version 3 are simply too low spec to run the required software, so we must use versions 3+. It should also be noted that since the Raspberry Pi 3 uses a 32 bit operating system, it cannot run software which requires 64 bit (such as CodiMD and JupyterHub). Despite this, all the afformentioned Pis can still function as servers and access points without issue.</p>
+<table class="table table"><tbody><tr><figure><img src="RaspberryPiZero.png" alt="An image of the Raspberry Pi Zero" class="figure mx-auto d-block"> Raspberry Pi Zero
+</figure><figure><img src="RaspberryPiZeroW.png" alt="An image of the Raspberry Pi Zero W" class="figure mx-auto d-block"> Raspberry Pi Zero W
+</figure><figure><img src="RaspberryPiZero2W.png" alt="An image of the Raspberry Pi Zero 2W" class="figure mx-auto d-block"> Raspberry Pi Zero 2W
+</figure></tr><tr><figure><img src="RaspberryPi3ModelAp.png" alt="An image of the Raspberry Pi 3 model A+" class="figure mx-auto d-block"> Raspberry Pi 3 model A+
+</figure><figure><img src="RaspberryPi3ModelB.png" alt="An image of the Raspberry Pi 3 model B" class="figure mx-auto d-block"> Raspberry Pi 3 model B
+</figure><figure><img src="RaspberryPi3ModelBp.png" alt="An image of the Raspberry Pi 3 model B+" class="figure mx-auto d-block"> Raspberry Pi 3 model B+
+</figure></tr><tr><figure><img src="RaspberryPi4ModelB.png" alt="An image of the Raspberry Pi 4 model B" class="figure mx-auto d-block"> Raspberry Pi 4 model B
+</figure><figure><img src="RaspberryPi400.png" alt="An image of the Raspberry Pi 400" class="figure mx-auto d-block"> Raspberry Pi 400
+</figure><figure><img src="RaspberryPiPico.png" alt="An image of the Raspberry Pi pico" class="figure mx-auto d-block"> Raspberry Pi pico
+</figure></tr><tr><figure><img src="RaspberryPi1ModelAp.png" alt="An image of the Raspberry Pi 1 model A+" class="figure mx-auto d-block"> Raspberry Pi 1 model A+
+</figure><figure><img src="RaspberryPi1ModelBp.png" alt="An image of the Raspberry Pi 1 model B+" class="figure mx-auto d-block"> Raspberry Pi 1 model B+
+</figure><td>
 </td>
-</tr></tbody></table><div id="challenge1" class="callout challenge">
+</tr></tbody></table></section><section id="choosing-an-sd-card"><h2 class="section-heading">Choosing an SD card</h2>
+<hr class="half-width"><p>Just like any other computer, Raspberry Pis require a place to store data. Most Pis work with SD cards, of which there are multiple types. The specific type of SD card needed depends on which specific Raspberry Pi model you use (on the website you can see this for each model in the Specification section near the bottom of the page). The afformentioned Pis will use either a standard SD card, or a microSD card.</p>
+<figure><img src="SDCards.png" alt="" class="figure mx-auto d-block"><figcaption>An image showcasing three types of SD card (standard, mini, and micro)</figcaption></figure><p>For CarpentriesOffline we need a minimum space of 5GB to store all of our software and data. Since SD cards come in sizes of incremental powers of two (2, 4, 8, 16, 32, etc.) we will need at minimum an 8GB SD card.</p>
+<div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-what-are-the-different-raspberry-pis-that-are-available" class="callout-inner">
 <h3 class="callout-title">Challenge 1: What are the different Raspberry Pis that are available?</h3>
 <div class="callout-content">
-
+<p>A list of these can be found here: <a href="https://www.raspberrypi.com/products/" class="external-link">https://www.raspberrypi.com/products/</a></p>
 </div>
 </div>
 </div>
@@ -312,10 +319,11 @@
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul><li>Raspberry Pi zero</li>
 <li>Raspberry Pi zero W</li>
+<li>Raspberry Pi zero 2W</li>
 <li>Raspberry Pi 1 model A+</li>
 <li>Raspberry Pi 1 model B+</li>
 <li>Raspberry Pi 3 model B</li>
@@ -323,7 +331,6 @@
 <li>Raspberry Pi 3 model A+</li>
 <li>Raspberry Pi 4 model B</li>
 <li>Raspberry Pi 400</li>
-<li>Raspberry Pi zero 2W</li>
 <li>Raspberry Pi pico</li>
 </ul></div>
 </div>
@@ -338,6 +345,7 @@
 <div class="callout-content">
 <ul><li>Raspberry Pi zero</li>
 <li>Raspberry Pi zero W</li>
+<li>Raspberry Pi zero 2W</li>
 <li>Raspberry Pi 1 model A+</li>
 <li>Raspberry Pi 1 model B+</li>
 <li>Raspberry Pi 3 model B</li>
@@ -345,7 +353,6 @@
 <li>Raspberry Pi 3 model A+</li>
 <li>Raspberry Pi 4 model B</li>
 <li>Raspberry Pi 400</li>
-<li>Raspberry Pi zero 2W</li>
 <li>Raspberry Pi pico</li>
 </ul></div>
 </div>
@@ -357,7 +364,7 @@
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul><li>Raspberry Pi 400</li>
 <li>Raspberry Pi 4 (all)</li>
@@ -388,7 +395,7 @@
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Correct Answer:</p>
 <pre><code>1. A credit card sized computer</code></pre>
@@ -420,7 +427,7 @@
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Correct Answer:</p>
 <pre><code>1. A micro SD card</code></pre>
@@ -503,7 +510,7 @@ any links that you are not going to use.
   "url": "https://carpentriesoffline.github.io/CarpentriesOffline_Instructor_Onboarding/02-choosing-your-hardware.html",
   "identifier": "https://carpentriesoffline.github.io/CarpentriesOffline_Instructor_Onboarding/02-choosing-your-hardware.html",
   "dateCreated": "2022-06-14",
-  "dateModified": "2022-07-23",
+  "dateModified": "2022-07-24",
   "datePublished": "2022-07-24"
 }
 
