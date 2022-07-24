@@ -6,6 +6,7 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
+- What is a raspberry Pi
 - What hardware do I need to set up CarpentriesOffline?
 - What specifications should the hardware meet?
 
@@ -21,67 +22,99 @@ exercises: 0
 
 ## Introduction
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.txt) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
+In order to hold an offline workshop we need some way of allowing the learners to download lesson material, data, and relevant software. To do this we need a computer with this data to act as an access point. Any computer which can run Linux with a web server will do, but for CarpentriesOffline we will be using the Raspberry Pi, due to its portability. Also, by sticking to only using Raspberry Pis we can ensure the software we use can be pre-packaged and will work without having to worry about getting the correct versions to work on differing hardware.
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+Raspberry Pis (not to be confused with Raspberry Pies) are low cost credit card sized computers often used in education. Their small size makes them very portable, allowing them to be set up and used anywhere with a power socket with minimal effort.
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+## Choosing a Raspberry Pi
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+A list of all the available Raspberry Pi devices can be found on the main Raspberry Pi website here: [https://www.raspberrypi.com/products/](https://www.raspberrypi.com/products/). Not all of these devices will work however, since some lack the minimum hardware requirements to run our software. The devices which will work are as follows:
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+- Raspberry Pi 400
+- Raspberry Pi 4 (all)
+- Raspberry Pi 3 (all)
+- Raspberry Pi zero (to be tested)
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-||||
-|---|---|---|
-|![](RaspberryPiZero.png)|![](RaspberryPiZero.png)|![](RaspberryPiZero.png)|![](RaspberryPiZero.png)|
-
+Raspberry Pis below version 3 are simply too low spec to run the required software, so we must use versions 3+. It should also be noted that since the Raspberry Pi 3 uses a 32 bit operating system, it cannot run software which requires 64 bit (such as CodiMD and JupyterHub). Despite this, all the afformentioned Pis can still function as servers and access points without issue.
 
 <table class="table">
  <tbody>
   <tr>
-   <td style="width: 50px"><img src='RaspberryPiZero.png' alt='An image of the Raspberry Pi Zero'>Raspberry Pi Zero</td>
-   <td style="width: 50px"><img src='RaspberryPiZeroW.png' alt='An image of the Raspberry Pi Zero W'>Raspberry Pi Zero W</td>
-   <td style="width: 50px"><img src='RaspberryPiZero2W.png' alt='An image of the Raspberry Pi Zero 2W'>Raspberry Pi Zero 2W</td>
+   <td>
+    <img src='RaspberryPiZero.png' alt='An image of the Raspberry Pi Zero'>
+    Raspberry Pi Zero
+   </td>
+   <td>
+    <img src='RaspberryPiZeroW.png' alt='An image of the Raspberry Pi Zero W'>
+    Raspberry Pi Zero W
+   </td>
+   <td>
+    <img src='RaspberryPiZero2W.png' alt='An image of the Raspberry Pi Zero 2W'>
+    Raspberry Pi Zero 2W
+   </td>
   </tr>
   <tr>
-   <td style="width: 50px"><img src='RaspberryPi3ModelAp.png' alt='An image of the Raspberry Pi 3 model A+'>Raspberry Pi 3 model A+</td>
-   <td style="width: 50px"><img src='RaspberryPi3ModelB.png' alt='An image of the Raspberry Pi 3 model B'>Raspberry Pi 3 model B</td>
-   <td style="width: 50px"><img src='RaspberryPi3ModelBp.png' alt='An image of the Raspberry Pi 3 model B+'>Raspberry Pi 3 model B+</td>
+   <td>
+    <img src='RaspberryPi3ModelAp.png' alt='An image of the Raspberry Pi 3 model A+'>
+    Raspberry Pi 3 model A+
+   </td>
+   <td>
+    <img src='RaspberryPi3ModelB.png' alt='An image of the Raspberry Pi 3 model B'>
+    Raspberry Pi 3 model B
+   </td>
+   <td>
+    <img src='RaspberryPi3ModelBp.png' alt='An image of the Raspberry Pi 3 model B+'>
+    Raspberry Pi 3 model B+
+   </td>
   </tr>
   <tr>
-   <td style="width: 50px"><img src='RaspberryPi4ModelB.png' alt='An image of the Raspberry Pi 4 model B'>Raspberry Pi 4 model B</td>
-   <td style="width: 50px"><img src='RaspberryPi400.png' alt='An image of the Raspberry Pi 400'>Raspberry Pi 400</td>
-   <td style="width: 50px"><img src='RaspberryPiPico.png' alt='An image of the Raspberry Pi pico'>Raspberry Pi pico</td>
+   <td>
+    <img src='RaspberryPi4ModelB.png' alt='An image of the Raspberry Pi 4 model B'>
+    Raspberry Pi 4 model B
+   </td>
+   <td>
+    <img src='RaspberryPi400.png' alt='An image of the Raspberry Pi 400'>
+    Raspberry Pi 400
+   </td>
+   <td>
+    <img src='RaspberryPiPico.png' alt='An image of the Raspberry Pi pico'>
+    Raspberry Pi pico
+   </td>
   </tr>
   <tr>
-   <td style="width: 50px"><img src='RaspberryPi1ModelAp.png' alt='An image of the Raspberry Pi 1 model A+'>Raspberry Pi 1 model A+</td>
-   <td style="width: 50px"><img src='RaspberryPi1ModelBp.png' alt='An image of the Raspberry Pi 1 model B+'>Raspberry Pi 1 model B+</td>
-   <td style="width: 50px"></td>
+   <td>
+    <img src='RaspberryPi1ModelAp.png' alt='An image of the Raspberry Pi 1 model A+'>
+    Raspberry Pi 1 model A+
+   </td>
+   <td>
+    <img src='RaspberryPi1ModelBp.png' alt='An image of the Raspberry Pi 1 model B+'>
+    Raspberry Pi 1 model B+
+   </td>
+   <td>
+   </td>
   </tr>
  </tbody>
 </table>
+
+## Choosing an SD card
+
+Just like any other computer, Raspberry Pis require a place to store data. Most Pis work with SD cards, of which there are multiple types. The specific type of SD card needed depends on which specific Raspberry Pi model you use (on the website you can see this for each model in the Specification section near the bottom of the page). The afformentioned Pis will use either a standard SD card, or a microSD card.
+
+![An image showcasing three types of SD card (standard, mini, and micro)](SDCards.png)
+
+For CarpentriesOffline we need a minimum space of 5GB to store all of our software and data. Since SD cards come in sizes of incremental powers of two (2, 4, 8, 16, 32, etc.) we will need at minimum an 8GB SD card.
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
 ## Challenge 1: What are the different Raspberry Pis that are available?
 
+A list of these can be found here: [https://www.raspberrypi.com/products/](https://www.raspberrypi.com/products/)
+
 :::::::::::::::::::::::: solution 
 
 - Raspberry Pi zero
 - Raspberry Pi zero W
+- Raspberry Pi zero 2W
 - Raspberry Pi 1 model A+
 - Raspberry Pi 1 model B+
 - Raspberry Pi 3 model B
@@ -89,7 +122,6 @@ associated with the lessons. They appear in the "Instructor View"
 - Raspberry Pi 3 model A+
 - Raspberry Pi 4 model B
 - Raspberry Pi 400
-- Raspberry Pi zero 2W
 - Raspberry Pi pico
 
 :::::::::::::::::::::::::::::::::
@@ -99,6 +131,7 @@ associated with the lessons. They appear in the "Instructor View"
 
 - Raspberry Pi zero
 - Raspberry Pi zero W
+- Raspberry Pi zero 2W
 - Raspberry Pi 1 model A+
 - Raspberry Pi 1 model B+
 - Raspberry Pi 3 model B
@@ -106,7 +139,6 @@ associated with the lessons. They appear in the "Instructor View"
 - Raspberry Pi 3 model A+
 - Raspberry Pi 4 model B
 - Raspberry Pi 400
-- Raspberry Pi zero 2W
 - Raspberry Pi pico
 
 :::::::::::::::::::::::: solution 
