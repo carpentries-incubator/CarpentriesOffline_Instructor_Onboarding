@@ -1,7 +1,6 @@
 # Contributing
 
-[Software Carpentry][swc-site] and [Data Carpentry][dc-site] are open source projects,
-and we welcome contributions of all kinds:
+This lesson is an open source project, and we welcome contributions of all kinds:
 new lessons,
 fixes to existing material,
 bug reports,
@@ -46,8 +45,8 @@ and to meet some of our community members.
 ## Where to Contribute
 
 1.  If you wish to change this lesson,
-    please work in <https://github.com/swcarpentry/shell-novice>,
-    which can be viewed at <https://swcarpentry.github.io/shell-novice>.
+    please work in <[https://github.com/swcarpentry/shell-novice](https://github.com/carpentries-incubator/CarpentriesOffline_Instructor_Onboarding)>,
+    which can be viewed at <[https://swcarpentry.github.io/shell-novice](https://carpentries-incubator.github.io/CarpentriesOffline_Instructor_Onboarding/)>.
 
 2.  If you wish to change the example lesson,
     please work in <https://github.com/carpentries/lesson-example>,
