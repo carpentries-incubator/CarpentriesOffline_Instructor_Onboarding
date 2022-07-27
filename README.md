@@ -1,10 +1,13 @@
-# The Carpentries Workbench Template Markdown Lesson
+# CarpentriesOffline Instructor Onboarding
 
-This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
+## Background Information
 
-To get started using this template, visit https://github.com/carpentries/workbench-template-md/generate
-and follow the instructions.
+- [CarpentriesOffline](https://github.com/carpentriesoffline)
 
-If you have any questions, contact [@zkamvar](https://github.com/zkamvar)
+![https://www.software.ac.uk](https://www.software.ac.uk/themes/ssi/images/ssi_logo_with_name-small2.png)
+![https://www.carpentries.org](https://carpentries.org/assets/img/TheCarpentries.svg)
 
-[workbench]: https://carpentries.github.io/sandpaper-docs/
+## Maintainers
+
+- [Jannetta S. Steyn](https://github.com/jsteyn)
+- [Stuart M. Lewis](https://github.com/blacktack2)
