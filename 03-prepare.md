@@ -1,7 +1,7 @@
 ---
 title: "Preparing an SD Card"
-teaching: 30
-exercises: 20
+teaching: 10
+exercises: 2
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
