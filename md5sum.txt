@@ -11,4 +11,4 @@
 "episodes/04-startup.md" "05c84c48248c00fe90a54e988344c0fa" "site/built/04-startup.md" "2022-07-10"
 "instructors/instructor-notes.md" "63f7f9bf7554b2772877cbd2c75d0352" "site/built/instructor-notes.md" "2022-06-16"
 "learners/setup.md" "543ee7ecca7355c8ae6ba3633d327948" "site/built/setup.md" "2022-06-16"
-"profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2022-06-14"
+"profiles/learner-profiles.md" "56ebcd03140be46f1b1d685a22dad839" "site/built/learner-profiles.md" "2022-08-12"
