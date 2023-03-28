@@ -5,22 +5,48 @@ on:
     types:
       [opened, synchronize, reopened]
 
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test-pr:
-    name: "Test if pull request is valid"
+    name: "Record PR number"
     if: ${{ github.event.action != 'closed' }}
     runs-on: ubuntu-latest
     outputs:
       is_valid: ${{ steps.check-pr.outputs.VALID }}
     steps:
+      - name: "Record PR number"
+        id: record
+        if: ${{ always() }}
+        run: |
+          echo ${{ github.event.number }} > ${{ github.workspace }}/NR # 2022-03-02: artifact name fixed to be NR
+      - name: "Upload PR number"
+        id: upload
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: pr
+          path: ${{ github.workspace }}/NR
+      - name: "Get Invalid Hashes File"
+        id: hash
+        run: |
+          echo "json<<EOF
+          $(curl -sL https://files.carpentries.org/invalid-hashes.json)
+          EOF" >> $GITHUB_OUTPUT
+      - name: "echo output"
+        run: |
+          echo "${{ steps.hash.outputs.json }}"
       - name: "Check PR"
         id: check-pr
         uses: carpentries/actions/check-valid-pr@main
         with:
           pr: ${{ github.event.number }}
+          invalid: ${{ fromJSON(steps.hash.outputs.json)[github.repository] }}
 
   build-md-source:
-    name: "Build markdown source files"
+    name: "Build markdown source files if valid"
     needs: test-pr
     runs-on: ubuntu-latest
     if: ${{ needs.test-pr.outputs.is_valid == 'true' }}
@@ -32,10 +58,10 @@ jobs:
       MD: ${{ github.workspace }}/site/built
     steps:
       - name: "Check Out Main Branch"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: "Check Out Staging Branch"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: md-outputs
           path: ${{ env.MD }}
@@ -48,8 +74,6 @@ jobs:
 
       - name: "Set up Pandoc"
         uses: r-lib/actions/setup-pandoc@v2
-        with:
-          pandoc-version: "2.11.4"
 
       - name: "Setup Lesson Engine"
         uses: carpentries/actions/setup-sandpaper@main
@@ -83,20 +107,20 @@ jobs:
         shell: Rscript {0}
 
       - name: "Upload PR"
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: pr
           path: ${{ env.PR }}
 
       - name: "Upload Diff"
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: diff
           path: ${{ env.CHIVE }}
           retention-days: 1
-      
+
       - name: "Upload Build"
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: built
           path: ${{ env.MD }}
@@ -105,29 +129,3 @@ jobs:
       - name: "Teardown"
         run: sandpaper::reset_site()
         shell: Rscript {0}
-
-  comment-changed-workflow:
-    name: "Comment if workflow files have changed"
-    needs: test-pr
-    runs-on: ubuntu-latest
-    if: ${{ needs.test-pr.outputs.is_valid != 'true' }}
-    steps:
-      - name: "Record PR number"
-        id: record
-        run: |
-          echo ${{ github.event.number }} > ${{ github.workspace }}/NR # 2022-03-02: artifact name fixed to be NR
-      - name: "Upload PR number"
-        id: upload
-        uses: actions/upload-artifact@v2
-        with:
-          name: pr
-          path: ${{ github.workspace }}/NR
-      - name: "Comment on PR"
-        id: comment-diff
-        uses: carpentries/actions/comment-diff@main
-        with:
-          pr: ${{ github.event.number }}
-          body: |
-            This pull request contains modified workflows and no preview will be created.
-
-            Unless these changes come from a trusted source, please inspect the changes for any malicious content.
