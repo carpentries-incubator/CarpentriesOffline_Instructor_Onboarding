@@ -322,12 +322,12 @@
 <li>
 <code>keypoints</code> are displayed at the end of the episode to reinforce the objectives.</li>
 </ol>
-<div id="challenge1" class="callout challenge">
+<div id="challenge-1-can-you-do-it" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Challenge 1: Can you do it?<a class="anchor" aria-label="anchor" href="#challenge-1-can-you-do-it"></a>
 </h3>
 <div class="callout-content">
 <p>What is the output of this command?</p>
@@ -358,12 +358,12 @@
 </div>
 </div>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
 </h3>
 <div class="callout-content">
 
@@ -471,27 +471,46 @@ any links that you are not going to use.
 <p>Raspberry Pis below version 3 are simply too low spec to run the required software, so we must use versions 3+. It should also be noted that since the Raspberry Pi 3 uses a 32 bit operating system, it cannot run software which requires 64 bit (such as CodiMD and JupyterHub). Despite this, all the afformentioned Pis can still function as servers and access points without issue.</p>
 <table class="table table"><tbody>
 <tr>
-<figure><img src="RaspberryPiZero.png" alt="An image of the Raspberry Pi Zero" class="figure mx-auto d-block"> Raspberry Pi Zero
-</figure><figure><img src="RaspberryPiZeroW.png" alt="An image of the Raspberry Pi Zero W" class="figure mx-auto d-block"> Raspberry Pi Zero W
-</figure><figure><img src="RaspberryPiZero2W.png" alt="An image of the Raspberry Pi Zero 2W" class="figure mx-auto d-block"> Raspberry Pi Zero 2W
-</figure>
+<td>
+<img src="RaspberryPiZero.png" alt="An image of the Raspberry Pi Zero" class="figure"> Raspberry Pi Zero
+</td>
+<td>
+<img src="RaspberryPiZeroW.png" alt="An image of the Raspberry Pi Zero W" class="figure"> Raspberry Pi Zero W
+</td>
+<td>
+<img src="RaspberryPiZero2W.png" alt="An image of the Raspberry Pi Zero 2W" class="figure"> Raspberry Pi Zero 2W
+</td>
 </tr>
 <tr>
-<figure><img src="RaspberryPi3ModelAp.png" alt="An image of the Raspberry Pi 3 model A+" class="figure mx-auto d-block"> Raspberry Pi 3 model A+
-</figure><figure><img src="RaspberryPi3ModelB.png" alt="An image of the Raspberry Pi 3 model B" class="figure mx-auto d-block"> Raspberry Pi 3 model B
-</figure><figure><img src="RaspberryPi3ModelBp.png" alt="An image of the Raspberry Pi 3 model B+" class="figure mx-auto d-block"> Raspberry Pi 3 model B+
-</figure>
+<td>
+<img src="RaspberryPi3ModelAp.png" alt="An image of the Raspberry Pi 3 model A+" class="figure"> Raspberry Pi 3 model A+
+</td>
+<td>
+<img src="RaspberryPi3ModelB.png" alt="An image of the Raspberry Pi 3 model B" class="figure"> Raspberry Pi 3 model B
+</td>
+<td>
+<img src="RaspberryPi3ModelBp.png" alt="An image of the Raspberry Pi 3 model B+" class="figure"> Raspberry Pi 3 model B+
+</td>
 </tr>
 <tr>
-<figure><img src="RaspberryPi4ModelB.png" alt="An image of the Raspberry Pi 4 model B" class="figure mx-auto d-block"> Raspberry Pi 4 model B
-</figure><figure><img src="RaspberryPi400.png" alt="An image of the Raspberry Pi 400" class="figure mx-auto d-block"> Raspberry Pi 400
-</figure><figure><img src="RaspberryPiPico.png" alt="An image of the Raspberry Pi pico" class="figure mx-auto d-block"> Raspberry Pi pico
-</figure>
+<td>
+<img src="RaspberryPi4ModelB.png" alt="An image of the Raspberry Pi 4 model B" class="figure"> Raspberry Pi 4 model B
+</td>
+<td>
+<img src="RaspberryPi400.png" alt="An image of the Raspberry Pi 400" class="figure"> Raspberry Pi 400
+</td>
+<td>
+<img src="RaspberryPiPico.png" alt="An image of the Raspberry Pi pico" class="figure"> Raspberry Pi pico
+</td>
 </tr>
 <tr>
-<figure><img src="RaspberryPi1ModelAp.png" alt="An image of the Raspberry Pi 1 model A+" class="figure mx-auto d-block"> Raspberry Pi 1 model A+
-</figure><figure><img src="RaspberryPi1ModelBp.png" alt="An image of the Raspberry Pi 1 model B+" class="figure mx-auto d-block"> Raspberry Pi 1 model B+
-</figure><td>
+<td>
+<img src="RaspberryPi1ModelAp.png" alt="An image of the Raspberry Pi 1 model A+" class="figure"> Raspberry Pi 1 model A+
+</td>
+<td>
+<img src="RaspberryPi1ModelBp.png" alt="An image of the Raspberry Pi 1 model B+" class="figure"> Raspberry Pi 1 model B+
+</td>
+<td>
 </td>
 </tr>
 </tbody></table>
@@ -502,14 +521,16 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 </h2>
 <hr class="half-width">
 <p>Just like any other computer, Raspberry Pis require a place to store data. Most Pis work with SD cards, of which there are multiple types. The specific type of SD card needed depends on which specific Raspberry Pi model you use (on the website you can see this for each model in the Specification section near the bottom of the page). The afformentioned Pis will use either a standard SD card, or a microSD card.</p>
-<figure align="center"><img src="SDCards.png" alt="An image showcasing three types of SD card (standard, mini, and micro)" class="figure mx-auto d-block"><br><a href="https://commons.wikimedia.org/wiki/File:Sdcard.svg" class="external-link">毛抜き</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" class="external-link">CC BY-SA 3.0</a>, via Wikimedia Commons
-</figure><p>For CarpentriesOffline we need a minimum space of 5GB to store all of our software and data. Since SD cards come in sizes of incremental powers of two (2, 4, 8, 16, 32, etc.) we will need at minimum an 8GB SD card.</p>
-<div id="challenge1" class="callout challenge">
+<p align="center">
+<img src="SDCards.png" alt="An image showcasing three types of SD card (standard, mini, and micro)" class="figure"><br><a href="https://commons.wikimedia.org/wiki/File:Sdcard.svg" class="external-link">毛抜き</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" class="external-link">CC BY-SA 3.0</a>, via Wikimedia Commons
+</p>
+<p>For CarpentriesOffline we need a minimum space of 5GB to store all of our software and data. Since SD cards come in sizes of incremental powers of two (2, 4, 8, 16, 32, etc.) we will need at minimum an 8GB SD card.</p>
+<div id="challenge-1-what-are-the-different-raspberry-pis-that-are-available" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-what-are-the-different-raspberry-pis-that-are-available" class="callout-inner">
-<h3 class="callout-title">Challenge 1: What are the different Raspberry Pis that are available?<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Challenge 1: What are the different Raspberry Pis that are available?<a class="anchor" aria-label="anchor" href="#challenge-1-what-are-the-different-raspberry-pis-that-are-available"></a>
 </h3>
 <div class="callout-content">
 <p>A list of these can be found here: <a href="https://www.raspberrypi.com/products/" class="external-link">https://www.raspberrypi.com/products/</a></p>
@@ -523,7 +544,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>Raspberry Pi zero</li>
@@ -542,12 +563,12 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 </div>
 </div>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="challenge-2-which-of-the-listed-raspberry-pis-would-be-appropriate-for-this-workshop" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-which-of-the-listed-raspberry-pis-would-be-appropriate-for-this-workshop" class="callout-inner">
-<h3 class="callout-title">Challenge 2: Which of the listed Raspberry Pis would be appropriate for this workshop?<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Challenge 2: Which of the listed Raspberry Pis would be appropriate for this workshop?<a class="anchor" aria-label="anchor" href="#challenge-2-which-of-the-listed-raspberry-pis-would-be-appropriate-for-this-workshop"></a>
 </h3>
 <div class="callout-content">
 <ul>
@@ -573,7 +594,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li>Raspberry Pi 400</li>
@@ -585,12 +606,12 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 </div>
 </div>
 </div>
-<div id="challenge3" class="callout challenge">
+<div id="challenge-3-what-is-a-raspberry-pi-mcq-or-text-area" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-3-what-is-a-raspberry-pi-mcq-or-text-area" class="callout-inner">
-<h3 class="callout-title">Challenge 3: What is a Raspberry Pi? (MCQ, or text area)<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+<h3 class="callout-title">Challenge 3: What is a Raspberry Pi? (MCQ, or text area)<a class="anchor" aria-label="anchor" href="#challenge-3-what-is-a-raspberry-pi-mcq-or-text-area"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -609,7 +630,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Correct Answer:</p>
 <pre><code>1. A credit card sized computer</code></pre>
@@ -620,12 +641,12 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 </div>
 </div>
 </div>
-<div id="challenge4" class="callout challenge">
+<div id="challenge-4-what-is-required-to-boot-up-a-raspberry-pi-mcq" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-4-what-is-required-to-boot-up-a-raspberry-pi-mcq" class="callout-inner">
-<h3 class="callout-title">Challenge 4: What is required to boot up a Raspberry Pi? (MCQ)<a class="anchor" aria-label="anchor" href="#challenge4"></a>
+<h3 class="callout-title">Challenge 4: What is required to boot up a Raspberry Pi? (MCQ)<a class="anchor" aria-label="anchor" href="#challenge-4-what-is-required-to-boot-up-a-raspberry-pi-mcq"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -644,7 +665,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Correct Answer:</p>
 <pre><code>1. A micro SD card</code></pre>
@@ -706,12 +727,12 @@ any links that you are not going to use.
 <p>In the case of the Raspberry Pi its default booting device is an SD card. Pre-RPi3 used a mini-SD card but RPi3 and RPi4 use micro-SD cards. SD cards are available in various capacities, ie. the amount of information that can be stored on it. A basic operating system for the Pi will probably take about 2GB but then you will also need space for all the Carpentries lesson files and other software that you want to make available to the learners.</p>
 <p>Usually when you buy a RPi you can also buy an SD card with the operating system pre-loaded. Alternatively you can buy an empty SD card and prepare it yourself. Preparing the SD card involves downloading an <strong>image</strong> of the operating system (and there are various versions available), downloading the software, Raspberry Pi Imager, required for writing the image to the SD card and then using the software to write the image to the SD card.</p>
 <p>The CarpentriesOffline team is building an <strong>image</strong> that can be written to the SD card that contains the operating system and all the required files. This image is about 5GB at the moment. So you will need an SD card that can hold at least that. The image is hosted on the CarpentriesOffline website and will be called CarpentriesOffline_vX.XX.img where X.XX is the version of the image. It might take a while to download this image so your instructor might choose to make the image available locally for this lesson, eg. on a USB memory stick. However, if you are going to download it, using your browser, make your way to <a href="https://github.com/carpentriesoffline/CarpentriesOffline.github.io" class="external-link">https://github.com/carpentriesoffline/CarpentriesOffline.github.io</a>. On the right hand side of the page, there should be a section with the heading <strong>Releases</strong>. Click on the release you wish to download and save the file to your computer.</p>
-<div id="challenge1" class="callout challenge">
+<div id="challenge-1-what-software-do-you-need-to-prepare-an-sd-card" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-what-software-do-you-need-to-prepare-an-sd-card" class="callout-inner">
-<h3 class="callout-title">Challenge 1: What software do you need to prepare an SD card?<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Challenge 1: What software do you need to prepare an SD card?<a class="anchor" aria-label="anchor" href="#challenge-1-what-software-do-you-need-to-prepare-an-sd-card"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -731,7 +752,7 @@ any links that you are not going to use.
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Word cannot be used to prepare an SD card, it is a word processor</li>
@@ -745,12 +766,12 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="challenge-2-where-would-you-find-the-carpentriesoffline-image" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-where-would-you-find-the-carpentriesoffline-image" class="callout-inner">
-<h3 class="callout-title">Challenge 2: Where would you find the CarpentriesOffline image?<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Challenge 2: Where would you find the CarpentriesOffline image?<a class="anchor" aria-label="anchor" href="#challenge-2-where-would-you-find-the-carpentriesoffline-image"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -769,7 +790,7 @@ any links that you are not going to use.
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 
 </div>
@@ -852,12 +873,12 @@ any links that you are not going to use.
 <li>
 <code>keypoints</code> are displayed at the end of the episode to reinforce the objectives.</li>
 </ol>
-<div id="challenge1" class="callout challenge">
+<div id="challenge-1-can-you-do-it" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Challenge 1: Can you do it?<a class="anchor" aria-label="anchor" href="#challenge-1-can-you-do-it"></a>
 </h3>
 <div class="callout-content">
 <p>What is the output of this command?</p>
@@ -888,12 +909,12 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
 </h3>
 <div class="callout-content">
 
@@ -968,7 +989,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -992,8 +1013,8 @@ any links that you are not going to use.
   "url": "https://carpentriesoffline.github.io/CarpentriesOffline_Instructor_Onboarding/aio.html",
   "identifier": "https://carpentriesoffline.github.io/CarpentriesOffline_Instructor_Onboarding/aio.html",
   "dateCreated": "2022-06-14",
-  "dateModified": "2023-05-16",
-  "datePublished": "2023-05-16"
+  "dateModified": "2023-05-23",
+  "datePublished": "2023-05-23"
 }
 
   </script><script>
