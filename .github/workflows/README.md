@@ -46,8 +46,11 @@ This workflow has two caches; one cache is for the lesson infrastructure and
 the other is for the the lesson dependencies if the lesson contains rendered
 content. These caches are invalidated by new versions of the infrastructure and
 the `renv.lock` file, respectively. If there is a problem with the cache, 
-manual invaliation is necessary and can be done by setting the `CACHE_VERSION`
-secret to the current date.
+manual invaliation is necessary. You will need maintain access to the repository
+and you can either go to the actions tab and [click on the caches button to find
+and invalidate the failing cache](https://github.blog/changelog/2022-10-20-manage-caches-in-your-actions-workflows-from-web-interface/) 
+or by setting the `CACHE_VERSION` secret to the current date (which will
+invalidate all of the caches).
 
 ## Updates
 
@@ -56,7 +59,7 @@ secret to the current date.
 These workflows run on a schedule and at the maintainer's request. Because they
 create pull requests that update workflows/require the downstream actions to run,
 they need a special repository/organization secret token called 
-`SANDPAPER_WORKFLOW` and it must have the `repo` and `workflow` scope. 
+`SANDPAPER_WORKFLOW` and it must have the `public_repo` and `workflow` scope. 
 
 This can be an individual user token, OR it can be a trusted bot account. If you
 have a repository in one of the official Carpentries accounts, then you do not
@@ -64,7 +67,7 @@ need to worry about this token being present because the Carpentries Core Team
 will take care of supplying this token.
 
 If you want to use your personal account: you can go to 
-<https://github.com/settings/tokens/new?scopes=repo,workflow&description=Sandpaper%20Token>
+<https://github.com/settings/tokens/new?scopes=public_repo,workflow&description=Sandpaper%20Token>
 to create a token. Once you have created your token, you should copy it to your
 clipboard and then go to your repository's settings > secrets > actions and
 create or edit the `SANDPAPER_WORKFLOW` secret, pasting in the generated token.
@@ -86,24 +89,25 @@ will do the following:
 1. check the recorded version of sandpaper against the current version on github
 2. update the files if there is a difference in versions
 
-After the files are updated, a pull request is created if there are any changes.
-Maintainers are encouraged to review the changes and accept the pull request.
+After the files are updated, if there are any changes, they are pushed to a
+branch called `update/workflows` and a pull request is created. Maintainers are
+encouraged to review the changes and accept the pull request if the outputs
+are okay.
 
 This update is run ~~weekly or~~ on demand.
-
-TODO: 
-  - perform check if a pull request exists before creating pull request
 
 ### 03 Maintain: Update Pacakge Cache (update-cache.yaml)
 
 For lessons that have generated content, we use {renv} to ensure that the output
 is stable. This is controlled by a single lockfile which documents the packages
-needed for the lesson and the version numbers.
+needed for the lesson and the version numbers. This workflow is skipped in 
+lessons that do not have generated content.
 
 Because the lessons need to remain current with the package ecosystem, it's a
 good idea to make sure these packages can be updated periodically. The 
-update cache workflow will do this by checking for updates, applying them and
-creating a pull request with _only the lockfile changed_. 
+update cache workflow will do this by checking for updates, applying them in a
+branch called `updates/packages` and creating a pull request with _only the
+lockfile changed_. 
 
 From here, the markdown documents will be rebuilt and you can inspect what has
 changed based on how the packages have updated. 
@@ -117,7 +121,24 @@ pull requests that do not pass checks and do not have bots commented on them.**
 This series of workflows all go together and are described in the following 
 diagram and the below sections:
 
-![Graph representation of a pull request](../../vignettes/articles/img/pr-flow.dot.svg)
+![Graph representation of a pull request](https://carpentries.github.io/sandpaper/articles/img/pr-flow.dot.svg)
+
+### Pre Flight Pull Request Validation (pr-preflight.yaml)
+
+This workflow runs every time a pull request is created and its purpose is to
+validate that the pull request is okay to run. This means the following things:
+
+1. The pull request does not contain modified workflow files
+2. If the pull request contains modified workflow files, it does not contain 
+   modified content files (such as a situation where @carpentries-bot will
+   make an automated pull request)
+3. The pull request does not contain an invalid commit hash (e.g. from a fork
+   that was made before a lesson was transitioned from styles to use the
+   workbench).
+
+Once the checks are finished, a comment is issued to the pull request, which 
+will allow maintainers to determine if it is safe to run the 
+"Receive Pull Request" workflow from new contributors.
 
 ### Recieve Pull Request (pr-recieve.yaml)
 
@@ -125,6 +146,11 @@ diagram and the below sections:
 pull request. GitHub has safeguarded the token used in this workflow to have no
 priviledges in the repository, but we have taken precautions to protect against
 spoofing.
+
+This workflow is triggered with every push to a pull request. If this workflow
+is already running and a new push is sent to the pull request, the workflow
+running from the previous push will be cancelled and a new workflow run will be
+started.
 
 The first step of this workflow is to check if it is valid (e.g. that no
 workflow files have been modified). If there are workflow files that have been
@@ -139,25 +165,23 @@ request. This builds the content and uploads three artifacts:
 3. The rendered files (build)
 
 Because this workflow builds generated content, it follows the same general 
-process as the sandpaper-main workflow with the same caching mechanisms.
+process as the `sandpaper-main` workflow with the same caching mechanisms.
 
 The artifacts produced are used by the next workflow.
 
-# sandpaper 0.5.5
 ### Comment on Pull Request (pr-comment.yaml)
 
 This workflow is triggered if the `pr-recieve.yaml` workflow is successful.
 The steps in this workflow are:
 
-1. Test if the workflow is valid
-2. If it is valid: create an orphan branch with two commits: the current state of
-   the repository and the proposed changes.
-3. If it is valid: comment on the pull request with the summary of changes
-4. If it is NOT valid: comment on the pull request that it is not valid,
-   warning the maintainer that more scrutiny is needed.
+1. Test if the workflow is valid and comment the validity of the workflow to the
+   pull request.
+2. If it is valid: create an orphan branch with two commits: the current state
+   of the repository and the proposed changes.
+3. If it is valid: update the pull request comment with the summary of changes
 
 Importantly: if the pull request is invalid, the branch is not created so any
-malicious code is not published. 
+malicious code is not published.
 
 From here, the maintainer can request changes from the author and eventually 
 either merge or reject the PR. When this happens, if the PR was valid, the 
