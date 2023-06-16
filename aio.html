@@ -291,7 +291,8 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do you write a lesson using Markdown and <a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
+<li>How do you write a lesson using Markdown and
+<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
 </ul>
 </div>
 </div>
@@ -302,7 +303,8 @@
 <h3 class="card-title">Objectives</h3>
 <ul>
 <li>Explain how to use markdown with The Carpentries Workbench</li>
-<li>Demonstrate how to include pieces of code, figures, and nested challenge blocks</li>
+<li>Demonstrate how to include pieces of code, figures, and nested
+challenge blocks</li>
 </ul>
 </div>
 </div>
@@ -312,15 +314,24 @@
 <section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a> for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R Markdown</a> for dynamic files that can render code into output. Please refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a valid Carpentries lesson:</p>
+<p>This is a lesson created via The Carpentries Workbench. It is written
+in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a>
+for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
+Markdown</a> for dynamic files that can render code into output. Please
+refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
+Carpentries Workbench</a> for full documentation.</p>
+<p>What you need to know is that there are three sections required for a
+valid Carpentries lesson:</p>
 <ol style="list-style-type: decimal">
 <li>
-<code>questions</code> are displayed at the beginning of the episode to prime the learner for the content.</li>
+<code>questions</code> are displayed at the beginning of the episode
+to prime the learner for the content.</li>
 <li>
-<code>objectives</code> are the learning objectives for an episode displayed with the questions.</li>
+<code>objectives</code> are the learning objectives for an episode
+displayed with the questions.</li>
 <li>
-<code>keypoints</code> are displayed at the end of the episode to reinforce the objectives.</li>
+<code>keypoints</code> are displayed at the end of the episode to
+reinforce the objectives.</li>
 </ol>
 <div id="challenge-1-can-you-do-it" class="callout challenge">
 <div class="callout-square">
@@ -363,7 +374,8 @@
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
+<h3 class="callout-title">Challenge 2: how do you nest solutions within
+challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
 </h3>
 <div class="callout-content">
 
@@ -379,7 +391,8 @@
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>You can add a line with at least three colons and a <code>solution</code> tag.</p>
+<p>You can add a line with at least three colons and a
+<code>solution</code> tag.</p>
 </div>
 </div>
 </div>
@@ -387,12 +400,15 @@
 </section><section id="figures"><h2 class="section-heading">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
 </h2>
 <hr class="half-width">
-<p>You can use standard markdown for static figures with the following syntax:</p>
+<p>You can use standard markdown for static figures with the following
+syntax:</p>
 <p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
 <figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><figcaption>You belong in The Carpentries!</figcaption></figure></section><section id="math"><h2 class="section-heading">Math<a class="anchor" aria-label="anchor" href="#math"></a>
 </h2>
 <hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to create dynamic reports with {knitr}, so we now use mathjax to describe this:</p>
+<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
+create dynamic reports with {knitr}, so we now use mathjax to describe
+this:</p>
 <p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
 <p>Cool, right?</p>
 <div id="keypoints1" class="callout keypoints">
@@ -404,10 +420,14 @@
 </h3>
 <div class="callout-content">
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson locally</li>
+<li>Use <code>.md</code> files for episodes when you want static
+content</li>
+<li>Use <code>.Rmd</code> files for episodes when you need to generate
+output</li>
+<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
+with your lesson</li>
+<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
+locally</li>
 </ul>
 </div>
 </div>
@@ -456,59 +476,90 @@ any links that you are not going to use.
 <section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
-<p>In order to hold an offline workshop we need some way of allowing the learners to download lesson material, data, and relevant software. To do this we need a computer with this data to act as an access point. Any computer which can run Linux with a web server will do, but for CarpentriesOffline we will be using the Raspberry Pi, due to its portability. Also, by sticking to only using Raspberry Pis we can ensure the software we use can be pre-packaged and will work without having to worry about getting the correct versions to work on differing hardware.</p>
-<p>Raspberry Pis (not to be confused with Raspberry Pies) are low cost credit card sized computers often used in education. Their small size makes them very portable, allowing them to be set up and used anywhere with a power socket with minimal effort.</p>
+<p>In order to hold an offline workshop we need some way of allowing the
+learners to download lesson material, data, and relevant software. To do
+this we need a computer with this data to act as an access point. Any
+computer which can run Linux with a web server will do, but for
+CarpentriesOffline we will be using the Raspberry Pi, due to its
+portability. Also, by sticking to only using Raspberry Pis we can ensure
+the software we use can be pre-packaged and will work without having to
+worry about getting the correct versions to work on differing
+hardware.</p>
+<p>Raspberry Pis (not to be confused with Raspberry Pies) are low cost
+credit card sized computers often used in education. Their small size
+makes them very portable, allowing them to be set up and used anywhere
+with a power socket with minimal effort.</p>
 </section><section id="choosing-a-raspberry-pi"><h2 class="section-heading">Choosing a Raspberry Pi<a class="anchor" aria-label="anchor" href="#choosing-a-raspberry-pi"></a>
 </h2>
 <hr class="half-width">
-<p>A list of all the available Raspberry Pi devices can be found on the main Raspberry Pi website here: <a href="https://www.raspberrypi.com/products/" class="external-link">https://www.raspberrypi.com/products/</a>. Not all of these devices will work however, since some lack the minimum hardware requirements to run our software. The devices which will work are as follows:</p>
+<p>A list of all the available Raspberry Pi devices can be found on the
+main Raspberry Pi website here: <a href="https://www.raspberrypi.com/products/" class="external-link">https://www.raspberrypi.com/products/</a>.
+Not all of these devices will work however, since some lack the minimum
+hardware requirements to run our software. The devices which will work
+are as follows:</p>
 <ul>
 <li>Raspberry Pi 400</li>
 <li>Raspberry Pi 4 (all)</li>
 <li>Raspberry Pi 3 (all)</li>
 <li>Raspberry Pi zero (to be tested)</li>
 </ul>
-<p>Raspberry Pis below version 3 are simply too low spec to run the required software, so we must use versions 3+. It should also be noted that since the Raspberry Pi 3 uses a 32 bit operating system, it cannot run software which requires 64 bit (such as CodiMD and JupyterHub). Despite this, all the afformentioned Pis can still function as servers and access points without issue.</p>
+<p>Raspberry Pis below version 3 are simply too low spec to run the
+required software, so we must use versions 3+. It should also be noted
+that since the Raspberry Pi 3 uses a 32 bit operating system, it cannot
+run software which requires 64 bit (such as CodiMD and JupyterHub).
+Despite this, all the afformentioned Pis can still function as servers
+and access points without issue.</p>
 <table class="table table"><tbody>
 <tr>
 <td>
-<img src="RaspberryPiZero.png" alt="An image of the Raspberry Pi Zero" class="figure"> Raspberry Pi Zero
+<img src="RaspberryPiZero.png" alt="An image of the Raspberry Pi Zero" class="figure">
+Raspberry Pi Zero
 </td>
 <td>
-<img src="RaspberryPiZeroW.png" alt="An image of the Raspberry Pi Zero W" class="figure"> Raspberry Pi Zero W
+<img src="RaspberryPiZeroW.png" alt="An image of the Raspberry Pi Zero W" class="figure">
+Raspberry Pi Zero W
 </td>
 <td>
-<img src="RaspberryPiZero2W.png" alt="An image of the Raspberry Pi Zero 2W" class="figure"> Raspberry Pi Zero 2W
-</td>
-</tr>
-<tr>
-<td>
-<img src="RaspberryPi3ModelAp.png" alt="An image of the Raspberry Pi 3 model A+" class="figure"> Raspberry Pi 3 model A+
-</td>
-<td>
-<img src="RaspberryPi3ModelB.png" alt="An image of the Raspberry Pi 3 model B" class="figure"> Raspberry Pi 3 model B
-</td>
-<td>
-<img src="RaspberryPi3ModelBp.png" alt="An image of the Raspberry Pi 3 model B+" class="figure"> Raspberry Pi 3 model B+
+<img src="RaspberryPiZero2W.png" alt="An image of the Raspberry Pi Zero 2W" class="figure">
+Raspberry Pi Zero 2W
 </td>
 </tr>
 <tr>
 <td>
-<img src="RaspberryPi4ModelB.png" alt="An image of the Raspberry Pi 4 model B" class="figure"> Raspberry Pi 4 model B
+<img src="RaspberryPi3ModelAp.png" alt="An image of the Raspberry Pi 3 model A+" class="figure">
+Raspberry Pi 3 model A+
 </td>
 <td>
-<img src="RaspberryPi400.png" alt="An image of the Raspberry Pi 400" class="figure"> Raspberry Pi 400
+<img src="RaspberryPi3ModelB.png" alt="An image of the Raspberry Pi 3 model B" class="figure">
+Raspberry Pi 3 model B
 </td>
 <td>
-<img src="RaspberryPiPico.png" alt="An image of the Raspberry Pi pico" class="figure"> Raspberry Pi pico
+<img src="RaspberryPi3ModelBp.png" alt="An image of the Raspberry Pi 3 model B+" class="figure">
+Raspberry Pi 3 model B+
 </td>
 </tr>
 <tr>
 <td>
-<img src="RaspberryPi1ModelAp.png" alt="An image of the Raspberry Pi 1 model A+" class="figure"> Raspberry Pi 1 model A+
+<img src="RaspberryPi4ModelB.png" alt="An image of the Raspberry Pi 4 model B" class="figure">
+Raspberry Pi 4 model B
 </td>
 <td>
-<img src="RaspberryPi1ModelBp.png" alt="An image of the Raspberry Pi 1 model B+" class="figure"> Raspberry Pi 1 model B+
+<img src="RaspberryPi400.png" alt="An image of the Raspberry Pi 400" class="figure">
+Raspberry Pi 400
+</td>
+<td>
+<img src="RaspberryPiPico.png" alt="An image of the Raspberry Pi pico" class="figure">
+Raspberry Pi pico
+</td>
+</tr>
+<tr>
+<td>
+<img src="RaspberryPi1ModelAp.png" alt="An image of the Raspberry Pi 1 model A+" class="figure">
+Raspberry Pi 1 model A+
+</td>
+<td>
+<img src="RaspberryPi1ModelBp.png" alt="An image of the Raspberry Pi 1 model B+" class="figure">
+Raspberry Pi 1 model B+
 </td>
 <td>
 </td>
@@ -520,17 +571,28 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 </section><section id="choosing-an-sd-card"><h2 class="section-heading">Choosing an SD card<a class="anchor" aria-label="anchor" href="#choosing-an-sd-card"></a>
 </h2>
 <hr class="half-width">
-<p>Just like any other computer, Raspberry Pis require a place to store data. Most Pis work with SD cards, of which there are multiple types. The specific type of SD card needed depends on which specific Raspberry Pi model you use (on the website you can see this for each model in the Specification section near the bottom of the page). The afformentioned Pis will use either a standard SD card, or a microSD card.</p>
+<p>Just like any other computer, Raspberry Pis require a place to store
+data. Most Pis work with SD cards, of which there are multiple types.
+The specific type of SD card needed depends on which specific Raspberry
+Pi model you use (on the website you can see this for each model in the
+Specification section near the bottom of the page). The afformentioned
+Pis will use either a standard SD card, or a microSD card.</p>
 <p align="center">
-<img src="SDCards.png" alt="An image showcasing three types of SD card (standard, mini, and micro)" class="figure"><br><a href="https://commons.wikimedia.org/wiki/File:Sdcard.svg" class="external-link">毛抜き</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" class="external-link">CC BY-SA 3.0</a>, via Wikimedia Commons
+<img src="SDCards.png" alt="An image showcasing three types of SD card (standard, mini, and micro)" class="figure"><br><a href="https://commons.wikimedia.org/wiki/File:Sdcard.svg" class="external-link">毛抜き</a>,
+<a href="https://creativecommons.org/licenses/by-sa/3.0" class="external-link">CC BY-SA
+3.0</a>, via Wikimedia Commons
 </p>
-<p>For CarpentriesOffline we need a minimum space of 5GB to store all of our software and data. Since SD cards come in sizes of incremental powers of two (2, 4, 8, 16, 32, etc.) we will need at minimum an 8GB SD card.</p>
+<p>For CarpentriesOffline we need a minimum space of 5GB to store all of
+our software and data. Since SD cards come in sizes of incremental
+powers of two (2, 4, 8, 16, 32, etc.) we will need at minimum an 8GB SD
+card.</p>
 <div id="challenge-1-what-are-the-different-raspberry-pis-that-are-available" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-what-are-the-different-raspberry-pis-that-are-available" class="callout-inner">
-<h3 class="callout-title">Challenge 1: What are the different Raspberry Pis that are available?<a class="anchor" aria-label="anchor" href="#challenge-1-what-are-the-different-raspberry-pis-that-are-available"></a>
+<h3 class="callout-title">Challenge 1: What are the different Raspberry
+Pis that are available?<a class="anchor" aria-label="anchor" href="#challenge-1-what-are-the-different-raspberry-pis-that-are-available"></a>
 </h3>
 <div class="callout-content">
 <p>A list of these can be found here: <a href="https://www.raspberrypi.com/products/" class="external-link">https://www.raspberrypi.com/products/</a></p>
@@ -544,7 +606,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>Raspberry Pi zero</li>
@@ -568,7 +630,8 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-which-of-the-listed-raspberry-pis-would-be-appropriate-for-this-workshop" class="callout-inner">
-<h3 class="callout-title">Challenge 2: Which of the listed Raspberry Pis would be appropriate for this workshop?<a class="anchor" aria-label="anchor" href="#challenge-2-which-of-the-listed-raspberry-pis-would-be-appropriate-for-this-workshop"></a>
+<h3 class="callout-title">Challenge 2: Which of the listed Raspberry Pis
+would be appropriate for this workshop?<a class="anchor" aria-label="anchor" href="#challenge-2-which-of-the-listed-raspberry-pis-would-be-appropriate-for-this-workshop"></a>
 </h3>
 <div class="callout-content">
 <ul>
@@ -594,7 +657,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>Raspberry Pi 400</li>
@@ -611,7 +674,8 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-3-what-is-a-raspberry-pi-mcq-or-text-area" class="callout-inner">
-<h3 class="callout-title">Challenge 3: What is a Raspberry Pi? (MCQ, or text area)<a class="anchor" aria-label="anchor" href="#challenge-3-what-is-a-raspberry-pi-mcq-or-text-area"></a>
+<h3 class="callout-title">Challenge 3: What is a Raspberry Pi? (MCQ, or
+text area)<a class="anchor" aria-label="anchor" href="#challenge-3-what-is-a-raspberry-pi-mcq-or-text-area"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -630,7 +694,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Correct Answer:</p>
 <pre><code>1. A credit card sized computer</code></pre>
@@ -646,7 +710,8 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-4-what-is-required-to-boot-up-a-raspberry-pi-mcq" class="callout-inner">
-<h3 class="callout-title">Challenge 4: What is required to boot up a Raspberry Pi? (MCQ)<a class="anchor" aria-label="anchor" href="#challenge-4-what-is-required-to-boot-up-a-raspberry-pi-mcq"></a>
+<h3 class="callout-title">Challenge 4: What is required to boot up a
+Raspberry Pi? (MCQ)<a class="anchor" aria-label="anchor" href="#challenge-4-what-is-required-to-boot-up-a-raspberry-pi-mcq"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -665,7 +730,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Correct Answer:</p>
 <pre><code>1. A micro SD card</code></pre>
@@ -723,16 +788,49 @@ any links that you are not going to use.
 <section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
-<p>Every computer needs to load an operating system when you switch it on. Therefore it will usually have a default place where it will look for an operating system in the first place. The process of loading the operating system is called <strong>booting</strong>. In general, if someone tells you to reboot your computer it means to switch is off and switch it back on again so that the operating system can be loaded from scratch. In the case of your desktop or laptop computers you will have a hard drive built into the computer or alternatively you might be able to boot from a USB device.</p>
-<p>In the case of the Raspberry Pi its default booting device is an SD card. Pre-RPi3 used a mini-SD card but RPi3 and RPi4 use micro-SD cards. SD cards are available in various capacities, ie. the amount of information that can be stored on it. A basic operating system for the Pi will probably take about 2GB but then you will also need space for all the Carpentries lesson files and other software that you want to make available to the learners.</p>
-<p>Usually when you buy a RPi you can also buy an SD card with the operating system pre-loaded. Alternatively you can buy an empty SD card and prepare it yourself. Preparing the SD card involves downloading an <strong>image</strong> of the operating system (and there are various versions available), downloading the software, Raspberry Pi Imager, required for writing the image to the SD card and then using the software to write the image to the SD card.</p>
-<p>The CarpentriesOffline team is building an <strong>image</strong> that can be written to the SD card that contains the operating system and all the required files. This image is about 5GB at the moment. So you will need an SD card that can hold at least that. The image is hosted on the CarpentriesOffline website and will be called CarpentriesOffline_vX.XX.img where X.XX is the version of the image. It might take a while to download this image so your instructor might choose to make the image available locally for this lesson, eg. on a USB memory stick. However, if you are going to download it, using your browser, make your way to <a href="https://github.com/carpentriesoffline/CarpentriesOffline.github.io" class="external-link">https://github.com/carpentriesoffline/CarpentriesOffline.github.io</a>. On the right hand side of the page, there should be a section with the heading <strong>Releases</strong>. Click on the release you wish to download and save the file to your computer.</p>
+<p>Every computer needs to load an operating system when you switch it
+on. Therefore it will usually have a default place where it will look
+for an operating system in the first place. The process of loading the
+operating system is called <strong>booting</strong>. In general, if
+someone tells you to reboot your computer it means to switch is off and
+switch it back on again so that the operating system can be loaded from
+scratch. In the case of your desktop or laptop computers you will have a
+hard drive built into the computer or alternatively you might be able to
+boot from a USB device.</p>
+<p>In the case of the Raspberry Pi its default booting device is an SD
+card. Pre-RPi3 used a mini-SD card but RPi3 and RPi4 use micro-SD cards.
+SD cards are available in various capacities, ie. the amount of
+information that can be stored on it. A basic operating system for the
+Pi will probably take about 2GB but then you will also need space for
+all the Carpentries lesson files and other software that you want to
+make available to the learners.</p>
+<p>Usually when you buy a RPi you can also buy an SD card with the
+operating system pre-loaded. Alternatively you can buy an empty SD card
+and prepare it yourself. Preparing the SD card involves downloading an
+<strong>image</strong> of the operating system (and there are various
+versions available), downloading the software, Raspberry Pi Imager,
+required for writing the image to the SD card and then using the
+software to write the image to the SD card.</p>
+<p>The CarpentriesOffline team is building an <strong>image</strong>
+that can be written to the SD card that contains the operating system
+and all the required files. This image is about 5GB at the moment. So
+you will need an SD card that can hold at least that. The image is
+hosted on the CarpentriesOffline website and will be called
+CarpentriesOffline_vX.XX.img where X.XX is the version of the image. It
+might take a while to download this image so your instructor might
+choose to make the image available locally for this lesson, eg. on a USB
+memory stick. However, if you are going to download it, using your
+browser, make your way to <a href="https://github.com/carpentriesoffline/CarpentriesOffline.github.io" class="external-link">https://github.com/carpentriesoffline/CarpentriesOffline.github.io</a>.
+On the right hand side of the page, there should be a section with the
+heading <strong>Releases</strong>. Click on the release you wish to
+download and save the file to your computer.</p>
 <div id="challenge-1-what-software-do-you-need-to-prepare-an-sd-card" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-what-software-do-you-need-to-prepare-an-sd-card" class="callout-inner">
-<h3 class="callout-title">Challenge 1: What software do you need to prepare an SD card?<a class="anchor" aria-label="anchor" href="#challenge-1-what-software-do-you-need-to-prepare-an-sd-card"></a>
+<h3 class="callout-title">Challenge 1: What software do you need to
+prepare an SD card?<a class="anchor" aria-label="anchor" href="#challenge-1-what-software-do-you-need-to-prepare-an-sd-card"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -752,15 +850,18 @@ any links that you are not going to use.
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
-<li>Word cannot be used to prepare an SD card, it is a word processor</li>
+<li>Word cannot be used to prepare an SD card, it is a word
+processor</li>
 <li>Excel cannot be used to prepare an SD card, it is a spreadsheet</li>
 <li>The correct answer is <em>3</em>
 </li>
-<li>LibreOffice is an office suite and connot be used to prepare an SD card</li>
-<li>SonicPi is a live coding environment to support computing and music lessons in schools.</li>
+<li>LibreOffice is an office suite and connot be used to prepare an SD
+card</li>
+<li>SonicPi is a live coding environment to support computing and music
+lessons in schools.</li>
 </ol>
 </div>
 </div>
@@ -771,7 +872,8 @@ any links that you are not going to use.
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-where-would-you-find-the-carpentriesoffline-image" class="callout-inner">
-<h3 class="callout-title">Challenge 2: Where would you find the CarpentriesOffline image?<a class="anchor" aria-label="anchor" href="#challenge-2-where-would-you-find-the-carpentriesoffline-image"></a>
+<h3 class="callout-title">Challenge 2: Where would you find the
+CarpentriesOffline image?<a class="anchor" aria-label="anchor" href="#challenge-2-where-would-you-find-the-carpentriesoffline-image"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
@@ -790,21 +892,37 @@ any links that you are not going to use.
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 
 </div>
 </div>
 </div>
 </div>
-<p>If you have not already done so you have to download and install the Raspberry Pi Imager. Using your browser, navigate to the Raspberry Pi <a href="https://www.raspberrypi.com/software/" class="external-link">download page</a>. You should now be able to select the download for your operating system. Click on the approprate link and save the installation file to your computer. The web page will provide further information for installing the software on your computer.</p>
-<p>Once the installation is complete you should be able to run the imager which will open with the following screen:</p>
-<figure><img src="RaspberryPiImager.png" alt="An image of the Raspberry Pi Imager software intro screen" class="figure mx-auto d-block"><figcaption>The Raspberry Pi Imager</figcaption></figure><p>You can now click on the <strong>Choose OS</strong> button which will open a window for selecting the image you want to write to the SD card. Scroll down to the bottom where you should find an option <strong>Use custom</strong>. Click on that option:</p>
-<figure><img src="ChooseImage.png" alt="An image of the RPi Imager software screen for selecting an image to be written to the SD card" class="figure mx-auto d-block"><figcaption>Selecting an image to write to the SD card</figcaption></figure><p>Navigate to where you saved the CarpentriesOffline image and select it. Make sure you have inserted the SD card into your computer. Now click on the <strong>Choose Storage</strong> button and select the device you want to write the image to:</p>
-<figure><img src="SelectDevice.phg" alt="An image of the RPi Imager software screen for selecting the device to be written to" class="figure mx-auto d-block"><figcaption>Select a device to write the image to</figcaption></figure><p>Once you have selected the Storage device, click the <strong>WRITE</strong> button. You will be prompted to overwrite the information on the SD card, click on <strong>YES</strong> to accept.</p>
+<p>If you have not already done so you have to download and install the
+Raspberry Pi Imager. Using your browser, navigate to the Raspberry Pi <a href="https://www.raspberrypi.com/software/" class="external-link">download page</a>. You
+should now be able to select the download for your operating system.
+Click on the approprate link and save the installation file to your
+computer. The web page will provide further information for installing
+the software on your computer.</p>
+<p>Once the installation is complete you should be able to run the
+imager which will open with the following screen:</p>
+<figure><img src="RaspberryPiImager.png" alt="An image of the Raspberry Pi Imager software intro screen" class="figure mx-auto d-block"><figcaption>The Raspberry Pi Imager</figcaption></figure><p>You can now click on the <strong>Choose OS</strong> button which will
+open a window for selecting the image you want to write to the SD card.
+Scroll down to the bottom where you should find an option <strong>Use
+custom</strong>. Click on that option:</p>
+<figure><img src="ChooseImage.png" alt="An image of the RPi Imager software screen for selecting an image to be written to the SD card" class="figure mx-auto d-block"><figcaption>Selecting an image to write to the SD card</figcaption></figure><p>Navigate to where you saved the CarpentriesOffline image and select
+it. Make sure you have inserted the SD card into your computer. Now
+click on the <strong>Choose Storage</strong> button and select the
+device you want to write the image to:</p>
+<figure><img src="SelectDevice.phg" alt="An image of the RPi Imager software screen for selecting the device to be written to" class="figure mx-auto d-block"><figcaption>Select a device to write the image to</figcaption></figure><p>Once you have selected the Storage device, click the
+<strong>WRITE</strong> button. You will be prompted to overwrite the
+information on the SD card, click on <strong>YES</strong> to accept.</p>
 <figure><img src="PromptToOverwrite.png" alt="An image of the RPi Imager software screen for confirming to overwrite the SD card" class="figure mx-auto d-block"><figcaption>Prompt to overwrite the SD card</figcaption></figure><p>The image will now be written to the SD card.</p>
-<figure><img src="Writing.png" alt="An image of the RPi Imager software screen while writing the image to the SD card" class="figure mx-auto d-block"><figcaption>Overwriting the SD card</figcaption></figure><p>Once the image has been written to the SD card a <strong>Write Successful</strong> message will be displayed.</p>
-<figure><img src="ImageWritten.png" alt="An image of the RPi Imager software screen after the image has been written succesfully." class="figure mx-auto d-block"><figcaption>Write Successful</figcaption></figure><p>You can now remove the SD card from your computer and insert it into the Raspberry Pi.</p>
+<figure><img src="Writing.png" alt="An image of the RPi Imager software screen while writing the image to the SD card" class="figure mx-auto d-block"><figcaption>Overwriting the SD card</figcaption></figure><p>Once the image has been written to the SD card a <strong>Write
+Successful</strong> message will be displayed.</p>
+<figure><img src="ImageWritten.png" alt="An image of the RPi Imager software screen after the image has been written succesfully." class="figure mx-auto d-block"><figcaption>Write Successful</figcaption></figure><p>You can now remove the SD card from your computer and insert it into
+the Raspberry Pi.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -863,15 +981,24 @@ any links that you are not going to use.
 <section id="booting-the-raspberry-pi-from-an-sd-card"><h2 class="section-heading">Booting the Raspberry Pi from an SD Card<a class="anchor" aria-label="anchor" href="#booting-the-raspberry-pi-from-an-sd-card"></a>
 </h2>
 <hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a> for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R Markdown</a> for dynamic files that can render code into output. Please refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a valid Carpentries lesson:</p>
+<p>This is a lesson created via The Carpentries Workbench. It is written
+in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a>
+for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
+Markdown</a> for dynamic files that can render code into output. Please
+refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
+Carpentries Workbench</a> for full documentation.</p>
+<p>What you need to know is that there are three sections required for a
+valid Carpentries lesson:</p>
 <ol style="list-style-type: decimal">
 <li>
-<code>questions</code> are displayed at the beginning of the episode to prime the learner for the content.</li>
+<code>questions</code> are displayed at the beginning of the episode
+to prime the learner for the content.</li>
 <li>
-<code>objectives</code> are the learning objectives for an episode displayed with the questions.</li>
+<code>objectives</code> are the learning objectives for an episode
+displayed with the questions.</li>
 <li>
-<code>keypoints</code> are displayed at the end of the episode to reinforce the objectives.</li>
+<code>keypoints</code> are displayed at the end of the episode to
+reinforce the objectives.</li>
 </ol>
 <div id="challenge-1-can-you-do-it" class="callout challenge">
 <div class="callout-square">
@@ -914,7 +1041,8 @@ any links that you are not going to use.
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
+<h3 class="callout-title">Challenge 2: how do you nest solutions within
+challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
 </h3>
 <div class="callout-content">
 
@@ -930,7 +1058,8 @@ any links that you are not going to use.
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>You can add a line with at least three colons and a <code>solution</code> tag.</p>
+<p>You can add a line with at least three colons and a
+<code>solution</code> tag.</p>
 </div>
 </div>
 </div>
@@ -938,12 +1067,15 @@ any links that you are not going to use.
 </section><section id="figures"><h2 class="section-heading">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
 </h2>
 <hr class="half-width">
-<p>You can use standard markdown for static figures with the following syntax:</p>
+<p>You can use standard markdown for static figures with the following
+syntax:</p>
 <p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
 <figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><figcaption>You belong in The Carpentries!</figcaption></figure></section><section id="math"><h2 class="section-heading">Math<a class="anchor" aria-label="anchor" href="#math"></a>
 </h2>
 <hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to create dynamic reports with {knitr}, so we now use mathjax to describe this:</p>
+<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
+create dynamic reports with {knitr}, so we now use mathjax to describe
+this:</p>
 <p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
 <p>Cool, right?</p>
 <div id="keypoints1" class="callout keypoints">
@@ -955,7 +1087,8 @@ any links that you are not going to use.
 </h3>
 <div class="callout-content">
 <ul>
-<li>Know how to start up the RPi as an Access Point and Server for learners to connect to.</li>
+<li>Know how to start up the RPi as an Access Point and Server for
+learners to connect to.</li>
 </ul>
 </div>
 </div>
@@ -1013,8 +1146,8 @@ any links that you are not going to use.
   "url": "https://carpentriesoffline.github.io/CarpentriesOffline_Instructor_Onboarding/aio.html",
   "identifier": "https://carpentriesoffline.github.io/CarpentriesOffline_Instructor_Onboarding/aio.html",
   "dateCreated": "2022-06-14",
-  "dateModified": "2023-06-13",
-  "datePublished": "2023-06-13"
+  "dateModified": "2023-06-16",
+  "datePublished": "2023-06-16"
 }
 
   </script><script>

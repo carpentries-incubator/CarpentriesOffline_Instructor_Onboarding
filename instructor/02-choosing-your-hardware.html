@@ -282,48 +282,79 @@
 </div>
 <section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
-<hr class="half-width"><p>In order to hold an offline workshop we need some way of allowing the learners to download lesson material, data, and relevant software. To do this we need a computer with this data to act as an access point. Any computer which can run Linux with a web server will do, but for CarpentriesOffline we will be using the Raspberry Pi, due to its portability. Also, by sticking to only using Raspberry Pis we can ensure the software we use can be pre-packaged and will work without having to worry about getting the correct versions to work on differing hardware.</p>
-<p>Raspberry Pis (not to be confused with Raspberry Pies) are low cost credit card sized computers often used in education. Their small size makes them very portable, allowing them to be set up and used anywhere with a power socket with minimal effort.</p>
+<hr class="half-width"><p>In order to hold an offline workshop we need some way of allowing the
+learners to download lesson material, data, and relevant software. To do
+this we need a computer with this data to act as an access point. Any
+computer which can run Linux with a web server will do, but for
+CarpentriesOffline we will be using the Raspberry Pi, due to its
+portability. Also, by sticking to only using Raspberry Pis we can ensure
+the software we use can be pre-packaged and will work without having to
+worry about getting the correct versions to work on differing
+hardware.</p>
+<p>Raspberry Pis (not to be confused with Raspberry Pies) are low cost
+credit card sized computers often used in education. Their small size
+makes them very portable, allowing them to be set up and used anywhere
+with a power socket with minimal effort.</p>
 </section><section id="choosing-a-raspberry-pi"><h2 class="section-heading">Choosing a Raspberry Pi<a class="anchor" aria-label="anchor" href="#choosing-a-raspberry-pi"></a>
 </h2>
-<hr class="half-width"><p>A list of all the available Raspberry Pi devices can be found on the main Raspberry Pi website here: <a href="https://www.raspberrypi.com/products/" class="external-link">https://www.raspberrypi.com/products/</a>. Not all of these devices will work however, since some lack the minimum hardware requirements to run our software. The devices which will work are as follows:</p>
+<hr class="half-width"><p>A list of all the available Raspberry Pi devices can be found on the
+main Raspberry Pi website here: <a href="https://www.raspberrypi.com/products/" class="external-link">https://www.raspberrypi.com/products/</a>.
+Not all of these devices will work however, since some lack the minimum
+hardware requirements to run our software. The devices which will work
+are as follows:</p>
 <ul><li>Raspberry Pi 400</li>
 <li>Raspberry Pi 4 (all)</li>
 <li>Raspberry Pi 3 (all)</li>
 <li>Raspberry Pi zero (to be tested)</li>
-</ul><p>Raspberry Pis below version 3 are simply too low spec to run the required software, so we must use versions 3+. It should also be noted that since the Raspberry Pi 3 uses a 32 bit operating system, it cannot run software which requires 64 bit (such as CodiMD and JupyterHub). Despite this, all the afformentioned Pis can still function as servers and access points without issue.</p>
+</ul><p>Raspberry Pis below version 3 are simply too low spec to run the
+required software, so we must use versions 3+. It should also be noted
+that since the Raspberry Pi 3 uses a 32 bit operating system, it cannot
+run software which requires 64 bit (such as CodiMD and JupyterHub).
+Despite this, all the afformentioned Pis can still function as servers
+and access points without issue.</p>
 <table class="table table"><tbody><tr><td>
-<img src="../RaspberryPiZero.png" alt="An image of the Raspberry Pi Zero" class="figure"> Raspberry Pi Zero
+<img src="../RaspberryPiZero.png" alt="An image of the Raspberry Pi Zero" class="figure">
+Raspberry Pi Zero
 </td>
 <td>
-<img src="../RaspberryPiZeroW.png" alt="An image of the Raspberry Pi Zero W" class="figure"> Raspberry Pi Zero W
+<img src="../RaspberryPiZeroW.png" alt="An image of the Raspberry Pi Zero W" class="figure">
+Raspberry Pi Zero W
 </td>
 <td>
-<img src="../RaspberryPiZero2W.png" alt="An image of the Raspberry Pi Zero 2W" class="figure"> Raspberry Pi Zero 2W
+<img src="../RaspberryPiZero2W.png" alt="An image of the Raspberry Pi Zero 2W" class="figure">
+Raspberry Pi Zero 2W
 </td>
 </tr><tr><td>
-<img src="../RaspberryPi3ModelAp.png" alt="An image of the Raspberry Pi 3 model A+" class="figure"> Raspberry Pi 3 model A+
+<img src="../RaspberryPi3ModelAp.png" alt="An image of the Raspberry Pi 3 model A+" class="figure">
+Raspberry Pi 3 model A+
 </td>
 <td>
-<img src="../RaspberryPi3ModelB.png" alt="An image of the Raspberry Pi 3 model B" class="figure"> Raspberry Pi 3 model B
+<img src="../RaspberryPi3ModelB.png" alt="An image of the Raspberry Pi 3 model B" class="figure">
+Raspberry Pi 3 model B
 </td>
 <td>
-<img src="../RaspberryPi3ModelBp.png" alt="An image of the Raspberry Pi 3 model B+" class="figure"> Raspberry Pi 3 model B+
+<img src="../RaspberryPi3ModelBp.png" alt="An image of the Raspberry Pi 3 model B+" class="figure">
+Raspberry Pi 3 model B+
 </td>
 </tr><tr><td>
-<img src="../RaspberryPi4ModelB.png" alt="An image of the Raspberry Pi 4 model B" class="figure"> Raspberry Pi 4 model B
+<img src="../RaspberryPi4ModelB.png" alt="An image of the Raspberry Pi 4 model B" class="figure">
+Raspberry Pi 4 model B
 </td>
 <td>
-<img src="../RaspberryPi400.png" alt="An image of the Raspberry Pi 400" class="figure"> Raspberry Pi 400
+<img src="../RaspberryPi400.png" alt="An image of the Raspberry Pi 400" class="figure">
+Raspberry Pi 400
 </td>
 <td>
-<img src="../RaspberryPiPico.png" alt="An image of the Raspberry Pi pico" class="figure"> Raspberry Pi pico
+<img src="../RaspberryPiPico.png" alt="An image of the Raspberry Pi pico" class="figure">
+Raspberry Pi pico
 </td>
 </tr><tr><td>
-<img src="../RaspberryPi1ModelAp.png" alt="An image of the Raspberry Pi 1 model A+" class="figure"> Raspberry Pi 1 model A+
+<img src="../RaspberryPi1ModelAp.png" alt="An image of the Raspberry Pi 1 model A+" class="figure">
+Raspberry Pi 1 model A+
 </td>
 <td>
-<img src="../RaspberryPi1ModelBp.png" alt="An image of the Raspberry Pi 1 model B+" class="figure"> Raspberry Pi 1 model B+
+<img src="../RaspberryPi1ModelBp.png" alt="An image of the Raspberry Pi 1 model B+" class="figure">
+Raspberry Pi 1 model B+
 </td>
 <td>
 </td>
@@ -332,17 +363,28 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 </p>
 </section><section id="choosing-an-sd-card"><h2 class="section-heading">Choosing an SD card<a class="anchor" aria-label="anchor" href="#choosing-an-sd-card"></a>
 </h2>
-<hr class="half-width"><p>Just like any other computer, Raspberry Pis require a place to store data. Most Pis work with SD cards, of which there are multiple types. The specific type of SD card needed depends on which specific Raspberry Pi model you use (on the website you can see this for each model in the Specification section near the bottom of the page). The afformentioned Pis will use either a standard SD card, or a microSD card.</p>
+<hr class="half-width"><p>Just like any other computer, Raspberry Pis require a place to store
+data. Most Pis work with SD cards, of which there are multiple types.
+The specific type of SD card needed depends on which specific Raspberry
+Pi model you use (on the website you can see this for each model in the
+Specification section near the bottom of the page). The afformentioned
+Pis will use either a standard SD card, or a microSD card.</p>
 <p align="center">
-<img src="../SDCards.png" alt="An image showcasing three types of SD card (standard, mini, and micro)" class="figure"><br><a href="https://commons.wikimedia.org/wiki/File:Sdcard.svg" class="external-link">毛抜き</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" class="external-link">CC BY-SA 3.0</a>, via Wikimedia Commons
+<img src="../SDCards.png" alt="An image showcasing three types of SD card (standard, mini, and micro)" class="figure"><br><a href="https://commons.wikimedia.org/wiki/File:Sdcard.svg" class="external-link">毛抜き</a>,
+<a href="https://creativecommons.org/licenses/by-sa/3.0" class="external-link">CC BY-SA
+3.0</a>, via Wikimedia Commons
 </p>
-<p>For CarpentriesOffline we need a minimum space of 5GB to store all of our software and data. Since SD cards come in sizes of incremental powers of two (2, 4, 8, 16, 32, etc.) we will need at minimum an 8GB SD card.</p>
+<p>For CarpentriesOffline we need a minimum space of 5GB to store all of
+our software and data. Since SD cards come in sizes of incremental
+powers of two (2, 4, 8, 16, 32, etc.) we will need at minimum an 8GB SD
+card.</p>
 <div id="challenge-1-what-are-the-different-raspberry-pis-that-are-available" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-what-are-the-different-raspberry-pis-that-are-available" class="callout-inner">
-<h3 class="callout-title">Challenge 1: What are the different Raspberry Pis that are available?<a class="anchor" aria-label="anchor" href="#challenge-1-what-are-the-different-raspberry-pis-that-are-available"></a>
+<h3 class="callout-title">Challenge 1: What are the different Raspberry
+Pis that are available?<a class="anchor" aria-label="anchor" href="#challenge-1-what-are-the-different-raspberry-pis-that-are-available"></a>
 </h3>
 <div class="callout-content">
 <p>A list of these can be found here: <a href="https://www.raspberrypi.com/products/" class="external-link">https://www.raspberrypi.com/products/</a></p>
@@ -356,7 +398,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul><li>Raspberry Pi zero</li>
 <li>Raspberry Pi zero W</li>
@@ -378,7 +420,8 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-which-of-the-listed-raspberry-pis-would-be-appropriate-for-this-workshop" class="callout-inner">
-<h3 class="callout-title">Challenge 2: Which of the listed Raspberry Pis would be appropriate for this workshop?<a class="anchor" aria-label="anchor" href="#challenge-2-which-of-the-listed-raspberry-pis-would-be-appropriate-for-this-workshop"></a>
+<h3 class="callout-title">Challenge 2: Which of the listed Raspberry Pis
+would be appropriate for this workshop?<a class="anchor" aria-label="anchor" href="#challenge-2-which-of-the-listed-raspberry-pis-would-be-appropriate-for-this-workshop"></a>
 </h3>
 <div class="callout-content">
 <ul><li>Raspberry Pi zero</li>
@@ -402,7 +445,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul><li>Raspberry Pi 400</li>
 <li>Raspberry Pi 4 (all)</li>
@@ -417,7 +460,8 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-3-what-is-a-raspberry-pi-mcq-or-text-area" class="callout-inner">
-<h3 class="callout-title">Challenge 3: What is a Raspberry Pi? (MCQ, or text area)<a class="anchor" aria-label="anchor" href="#challenge-3-what-is-a-raspberry-pi-mcq-or-text-area"></a>
+<h3 class="callout-title">Challenge 3: What is a Raspberry Pi? (MCQ, or
+text area)<a class="anchor" aria-label="anchor" href="#challenge-3-what-is-a-raspberry-pi-mcq-or-text-area"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>A credit card sized computer</li>
@@ -434,7 +478,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Correct Answer:</p>
 <pre><code>1. A credit card sized computer</code></pre>
@@ -450,7 +494,8 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-4-what-is-required-to-boot-up-a-raspberry-pi-mcq" class="callout-inner">
-<h3 class="callout-title">Challenge 4: What is required to boot up a Raspberry Pi? (MCQ)<a class="anchor" aria-label="anchor" href="#challenge-4-what-is-required-to-boot-up-a-raspberry-pi-mcq"></a>
+<h3 class="callout-title">Challenge 4: What is required to boot up a
+Raspberry Pi? (MCQ)<a class="anchor" aria-label="anchor" href="#challenge-4-what-is-required-to-boot-up-a-raspberry-pi-mcq"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>A micro SD card</li>
@@ -467,7 +512,7 @@ Images sourced from: <a href="https://www.raspberrypi.com/products/" class="exte
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Correct Answer:</p>
 <pre><code>1. A micro SD card</code></pre>
@@ -537,7 +582,7 @@ any links that you are not going to use.
   "identifier": "https://carpentriesoffline.github.io/CarpentriesOffline_Instructor_Onboarding/instructor/02-choosing-your-hardware.html",
   "dateCreated": "2022-06-14",
   "dateModified": "2022-07-28",
-  "datePublished": "2023-06-13"
+  "datePublished": "2023-06-16"
 }
 
   </script><script>
